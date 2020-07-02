@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+  <g id="Group_744" data-name="Group 744" transform="translate(-1027 -936)">
+    <g id="Rectangle_165" data-name="Rectangle 165" transform="translate(1027 936)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="33" height="33" stroke="none"/>
+      <rect x="0.5" y="0.5" width="32" height="32" fill="none"/>
+    </g>
+    <g id="destination" transform="translate(1032 913.07)">
+      <path id="Path_221" data-name="Path 221" d="M19.422,42.439H10.459A2.635,2.635,0,0,0,8.57,40.552l0-2.7h6.571a.656.656,0,0,0,.562-.994L13.927,33.91l1.775-2.99a.656.656,0,0,0-.564-.991H7.907a.656.656,0,0,0-.656.656l.007,9.967a2.626,2.626,0,1,0,3.2,3.2h8.963a1.651,1.651,0,1,1,0,3.3H3.865a1.99,1.99,0,1,0,0,1.312H19.422a2.962,2.962,0,1,0,0-5.925Zm-5.436-11.2L12.6,33.578a.656.656,0,0,0,0,.673l1.377,2.288H8.567l0-5.3ZM7.916,44.409A1.314,1.314,0,1,1,9.23,43.095a1.315,1.315,0,0,1-1.314,1.314ZM1.988,48.386a.678.678,0,1,1,.677-.678A.678.678,0,0,1,1.988,48.386Z" transform="translate(0 0)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

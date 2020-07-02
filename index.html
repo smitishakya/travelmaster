@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Travel Master</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+</head>
+<body>
+    <div class="hero">
+        <nav class="navigation">
+            <img class="nav-logo" src="./img/logo.svg" alt="Travel Master Logo">
+            <button class="hamburger" id="hamburger" aria-label="Hamburger icon">
+                <img class="menu-icon" src="./img/hamburger-menu.svg" alt="menu-icon" />
+            </button>
+            <ul class="nav-list" id="nav-ul">  
+                <li class="nav-li"><a href="#">Home</a></li>
+                <li class="nav-li"><a href="#">About</a></li>
+                <select class="nav-li hero-select" name="destination" id="destionation"><option value="des">Destinations</option></select>
+                <select class="nav-li hero-select" name="trip types" id="trip types"><option value="trip">Trip Types</option></select>
+                <li class="nav-li"><a href="#">Gallery</a></li>
+                <li class="nav-li"><a href="#">Blog</a></li>
+                <li class="nav-li"><a href="#">Contact</a></li>
+            </ul>
+            <ul class="nav-contact-info" id="nav-contact">
+                <li class="nav-li"><a href="#">info@wptravel.com &nbsp | </a></li>
+                <li class="nav-li"><a href="#">+977 9845123470</a></li>
+            </ul>               
+            <button class="nav-btn btn" id="nav-button">Sign In</button>
+        </nav>
+        <hr class="line">     
+        <header class="heading">
+            <div class="heading-content">
+                <h1>Plan Your Global Trip</h1>
+                <p class="hero-p">Tempor invidunt ut labore etdolore magna aliquyam erat, sed diam voluptua.<br> 
+                 At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                <button class="btn orange-btn">Book Now</button>
+                <button class="btn transparent-btn">Know More</button>
+            </div>
+            <form action="#" class="trip-search-form">
+                 <div class="form-div">
+                    <label for="keyword">Keyword</label>
+                    <input class="search-input" type="text" name="keyword" value="Enter your location or keyword" size="26">
+                 </div>
+                 <div class="form-div">
+                    <img src="./img/trip-type-icon.svg" alt="Trip Type Icon" class="form-icon">
+                    <label for="trip type">Trip Type</label>
+                    <select class="search-input" name="trip type" id="trip type">
+                        <option value="ice surfing">Ice Surfing</option>
+                    </select>
+                 </div>
+                 <div class="form-div">
+                    <img src="./img/destination-icon.svg" alt="Destination Icon" class="form-icon">
+                    <label for="destination">Destination</label>            
+                    <select class="search-input" name="destination" id="destination">
+                        <option value="new zealand">New Zealand</option>
+                    </select>
+                 </div>          
+                <button class="btn search-btn"><img class="search-icon" src="./img/search-icon.svg" alt="search-icon">Search</button>
+            </form>
+            <hr class="line">
+            <div class="scroll-down">
+                <p>Scroll Down</p>
+                <img src="./img/scroll-down.svg" alt="scroll-down">
+            </div>    
+        </header>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="./script.js"></script>  
+</body>
+</html>
