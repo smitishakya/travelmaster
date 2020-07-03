@@ -9,6 +9,21 @@
 html,body{
     overflow-x: hidden;
 }
+h2{
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 0.5em;
+}
+h3{
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #959595;
+}
 /* Regular 400
 Medium 500
 Bold 700 */
@@ -99,11 +114,11 @@ h1{
 .orange-btn{
     background-color: #FF8121;
     border: none;
-    margin: 0 10px;
 }
 .transparent-btn{
     background-color:transparent; 
     border: 1px solid white;  
+    margin: 0 10px;
 }
 .trip-search-form{
     border: 1px solid white;
@@ -160,12 +175,184 @@ label,.search-input, .form-icon {
 .scroll-down p{
     font-size: 14px;
 }
+/* About Travel Master Section */
+.about-travel-master{
+    margin: 30px;
+}
+.row {
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+}
+.col-1{
+    flex: 30%;
+    padding: 10px;
+}
+.col-2{
+    flex: 50%;
+    padding: 10px;
+}
+.about-sub-title{
+    font-size: 18px;
+}
+.about-img{
+    padding: 0px 0px 10px 0px;
+}
+.about-fea-img{
+    width: 238px;
+}
+/* Latest Trips */
+.latest-trips{
+    margin: 30px;
+}
+.col-3{
+    flex: 20%;
+    padding: 10px;
+}
+.col-4{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.col-sm-4{
+    border: 1px solid black;
+    line-height: 1.5em;
+   
+}
+.days{
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+}
+
+.days-row{
+    display: flex;
+    justify-content: space-between;
+}
+.days-row-1 p{
+    font-weight: 700;
+    color: black;
+}
+.location{
+    display: flex;
+    flex-direction: row;
+}
+.location img{
+    padding: 0px 10px 0px 10px;
+}
+.col-sm-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+
+}
+.star-img{
+    padding: 0px 5px 0px 0px;
+}
+.col-sm-sec{
+    position: relative;
+}
+.days{
+    position: absolute;
+    top: 95px;
+    left: 3px;
+    right: 3px;
+    padding: 10px 10px 0px 10px;
+}
+.col-4-h4{
+    margin-top: 70px;
+    padding: 0px 10px 0px 10px;
+}
+.col-sm-p, .col-sm-bottom{
+    padding: 10px;
+}
+
+.col-sm-img {
+    width: 236px;
+}
+.col-5{
+    flex: 30%;
+    padding: 15px;
+    border: 1px solid black;
+    margin: 20px;
+    text-align: center;
+}
+.trans-btn{
+    background-color:transparent; 
+    border: 1px solid black;  
+    color: black;
+}
+.pop-sm-img{
+    width: 238px;
+}
+.pop-rating{
+    background-color: #F6F6F6;
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    right: 10px;
+    padding: 3px;
+}
+.pop-h4{
+    padding: 0px 10px 0px 10px;
+}
+.pop-location{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+}
+.pop-location p{
+    padding: 0px 10px 0px 10px;
+}
+.pop-rows{
+    flex: 50%;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.col-sm-pop{
+    border: 1px solid #E8E8E8;
+    line-height: 1.5em;
+    margin: 0px 0px 20px 0px;
+}
+
+.black-btn{
+    background-color: black;
+    color: white;
+    border: none;
+}
+.discover-places{
+    background-image: url(./img/discover-places-interest.svg);
+    color: white;
+}
+.portfolio-nav{
+    color: #959595;
+}
+.book-now{
+    background-image: url(./img/book-now-back-img.svg);
+    color: white;
+}
+.contact-sec{
+    background-image: url(./img/newsletter-back-img.svg);
+    color: white;
+}
+  
 /* Ipad and Desktop Size */
 @media screen and (min-width: 768px){
+    h2{
+        font-size: 36px;
+    }
     /* hero section */
     h1{
         font-size: 70px;
-    }
+    }  
     .hero-p{
         font-size: 20px;
     }
@@ -175,6 +362,41 @@ label,.search-input, .form-icon {
     .trip-search-form{
         margin: 0px 230px;
         padding: 20px;
+    }
+    /* About Travel Master Section */
+    .about-travel-master, .latest-trips{
+        margin: 50px 100px;
+    }
+    .about-sub-title{
+        font-size: 20px;
+    }
+    .about-fea-img{
+        width: 458px;
+    }
+    .days{
+        position: absolute;
+        top: 127px;
+        left: 20px;
+        padding: 10px 10px 0px 10px;
+    }
+    .col-sm-pop{
+        padding-right: 105px;
+    }
+    
+    .col-sm-img {
+        width: 336px;
+    }
+    .pop-rating{
+        top: 168px;
+        left: 343px;
+        right: -89px;
+        padding: 8px;
+    }
+    .pop-sm-img {
+        width: 451px;
+    }
+    .pop-rows{
+        margin: 0 100px;
     }
 
     
@@ -226,5 +448,50 @@ label,.search-input, .form-icon {
     .search-btn{
         padding: 10px 35px;
     }
+    /* About Travel Master Section */
+    .row {
+        flex-direction: row;
+    }
+    .row-2{
+        display: flex;
+        justify-content: flex-start;
+    } 
+    .col-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+    .about-img{
+        padding: 0px 10px 0px 0px;
+        width: 195px;
+    }
+    .col-4{
+        flex-direction: row;
+    }
+    .days{
+        top: 127px;
+        left: 40px;
+        right: 40px;
+        
+    }
+    .col-sm-pop {
+        padding: 0;
+        margin: 20px;
+    }
+    .pop-rows{
+        margin: 0;
+    }
+
+    .pop-sm-img {
+        width: 346px;
+    }
+    .pop-rating {
+        top: 115px;
+        left: 255px;
+        right: -2px;
+        padding: 8px;
+    }
+    
 
 }
