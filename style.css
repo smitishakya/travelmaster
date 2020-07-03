@@ -27,14 +27,7 @@ p{
 /* Regular 400
 Medium 500
 Bold 700 */
-.hero{
-    background-image: url(./img/hero-image.svg);
-    background-size: cover;
-    color: white;
-    padding-bottom: 40px;
-}
-
-/* Navigation */
+/* Navigation and Hero Section */
 .navigation {
     display: flex;
     flex-wrap: wrap;
@@ -45,12 +38,10 @@ Bold 700 */
 .nav-logo{
     width: 100px;
 }
-
 .nav-li{
     display: inline-block;
     padding: 15px 5px;
 }
-
 .nav-li a ,.nav-list select {
     font-size: 16px;
     font-weight: 500;
@@ -82,6 +73,9 @@ Bold 700 */
     font-weight: 500;
     font-size: 15px;
 }
+.line{
+    border-bottom: 1px solid white;
+}
 .hamburger{
     display: block;
     cursor: pointer;
@@ -92,6 +86,12 @@ Bold 700 */
 }
 .line{ display: none;}
 /* Hero Section */
+.hero{
+    background-image: url(./img/hero-image.svg);
+    background-size: cover;
+    color: white;
+    padding-bottom: 40px;
+}
 .heading-content{
     text-align: center;
     color: white;
@@ -134,48 +134,50 @@ h1{
     color:white;
     border: none;
 }
-label{
-    font-size: 14px;
-    font-weight: 700;
-}
-.search-input{
-    background-color: transparent;
-    color:white;
-    border: none;
-    font-size: 12px;
-    font-weight: 400;
-}
-.search-btn{
-    font-size: 14px;
-    font-weight: 400;
-    color: black;
-    padding: 4px 10px;
-    display: flex;
-    align-items: center;
-}
-.search-icon{
-    width: 24.28px;
-    height: 32.77px;
-    padding: 0 2px;
-}
-.form-div{
-    display: flex;
-    align-items: end;
-    padding: 12px;
-    margin: -5px;
-}
-/* Form Section */
-label,.search-input, .form-icon {
-    margin: 0 0 0 12px;
-}
-.scroll-down{
-    margin-top: 2em;
-    text-align: center;
-}
-.scroll-down p{
-    font-size: 14px;
-}
-/* About Travel Master Section */
+    /* Form Section */
+    .form-div{
+        display: flex;
+        align-items: end;
+        padding: 12px;
+        margin: -5px;
+    }
+    .input{
+        background-color: transparent;
+        color:white; 
+        font-size: 12px;
+        font-weight: 400;
+    }
+    label{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .search-input{
+        border: none;
+    }
+    .search-btn{
+        font-size: 14px;
+        font-weight: 400;
+        color: black;
+        padding: 4px 10px;
+        display: flex;
+        align-items: center;
+    }
+    label,.search-input, .form-icon {
+        margin: 0 0 0 12px;
+    }
+    .search-icon{
+        width: 24.28px;
+        height: 32.77px;
+        padding: 0 2px;
+    }
+    .scroll-down{
+        margin-top: 2em;
+        text-align: center;
+    }
+    .scroll-down p{
+        font-size: 14px;
+    }
+/* About Travel Master */
 .about-travel-master{
     margin: 30px;
 }
@@ -224,8 +226,12 @@ label,.search-input, .form-icon {
     background-color: #F6F6F6;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 95px;
+    left: 3px;
+    right: 3px;
+    padding: 10px 10px 0px 10px;
 }
-
 .days-row{
     display: flex;
     justify-content: space-between;
@@ -257,13 +263,7 @@ label,.search-input, .form-icon {
 .col-sm-sec{
     position: relative;
 }
-.days{
-    position: absolute;
-    top: 95px;
-    left: 3px;
-    right: 3px;
-    padding: 10px 10px 0px 10px;
-}
+
 .col-4-h4{
     margin-top: 70px;
     padding: 0px 10px 0px 10px;
@@ -275,6 +275,11 @@ label,.search-input, .form-icon {
 .col-sm-img {
     width: 236px;
 }
+
+/* Service Section  */
+.service{
+    margin: 30px 50px;
+}
 .col-5{
     flex: 30%;
     padding: 15px;
@@ -282,10 +287,14 @@ label,.search-input, .form-icon {
     margin: 20px;
     text-align: center;
 }
+/* Popular Destination   */
 .trans-btn{
     background-color:transparent; 
     border: 1px solid black;  
     color: black;
+    margin: 85px 20px;
+    padding: 6px 22px;
+    font-size: 13px;
 }
 .pop-sm-img{
     width: 238px;
@@ -314,36 +323,202 @@ label,.search-input, .form-icon {
 .pop-rows{
     flex: 50%;
     display: flex;
-    padding: 10px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .col-sm-pop{
     border: 1px solid #E8E8E8;
     line-height: 1.5em;
-    margin: 0px 0px 20px 0px;
+}
+/* An Amazing Journey */
+.amazing-journey {
+    padding: 30px 50px;
+    background-color: #F6F6F6;
 }
 
+/* Tour Packages  */
 .black-btn{
     background-color: black;
     color: white;
     border: none;
 }
+/* Discover Places by Interest */
 .discover-places{
     background-image: url(./img/discover-places-interest.svg);
     color: white;
+    margin: 30px 50px 30px 0px;
+}
+/* Portfolio  */
+.pop-destinations {
+    margin: 30px 50px;
+}
+.pop-heading {
+    display: flex;
+    justify-content: space-between;
 }
 .portfolio-nav{
     color: #959595;
 }
+
+/* Hear from Our Guests */
+.guests-section{
+    margin: 30px 50px;
+}
+
+/* Unique Experience */
+.unique-exp{
+    margin: 30px 50px; 
+}
+.unique-row-1, .unique-row-2{
+    border: 1px solid #C2C2C2;
+}
+/* European cities with most beautiful architecture. */
 .book-now{
     background-image: url(./img/book-now-back-img.svg);
     color: white;
+    padding: 30px 50px;
 }
+/* latest-blogs */
+.latest-blogs{
+    margin: 30px 50px;   
+}
+/* Our team */
+.philip{
+    position: relative;
+}
+.team-info{
+    background-color: #0000009e;
+    position: absolute;
+    text-align: center;
+    top: 134px;
+    left: -1px;
+    right: -2px;
+}
+.team-info p{
+    color: white;
+}
+
+.team-img{
+    min-width: 218px;
+    width: 100%;
+}
+
+.team-social img{
+    padding-right: 10px;
+}
+.team-row{
+    margin: 0 50px;
+}
+.team-col-1, .team-col-1{
+    flex: 30%;
+}
+.team-col-2{
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Contact section */
+
 .contact-sec{
     background-image: url(./img/newsletter-back-img.svg);
     color: white;
 }
-  
+.contact-row{
+    margin: 0 50px;
+}
+.col-contact-1, .col-contact-2{
+    padding: 20px;
+    margin: 30px 0px;
+    
+}
+.social-contact img {
+    padding: 4px;
+}
+.col-contact-1 h2{
+    color: black;
+}
+.col-contact-1{
+    background-color: white;
+    line-height: 3em;
+}
+.col-contact-2{
+    line-height: 3em;
+}
+
+.submit-input{
+    border: 1px solid white;
+    padding: 10px 20px;
+    width:100%;
+}
+
+/* Footer Section */
+.footer-navigation{
+    margin: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer-nav-logo{
+    padding: 0px 30px 0px 0px;
+}
+.footer-nav-list {
+    display: flex;
+}
+.footer-nav-li {
+    display: inline-block;
+    padding: 15px 5px;
+    color: black;
+}
+.footer-nav-li a{
+    color: black;
+}
+.footer-bottom, .footer-top{
+    margin: 0 50px;
+}
+.info-footer {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.social-footer {
+    display: flex;
+    margin: 0px 0px 0px auto;
+    padding: 10px;
+}
+.footer-line{
+    border-bottom: 1px solid #C2C2C2;
+    margin: 0 50px;
+}
+.footer-li {
+    display: inline-block;
+    padding: 6px;
+}
+p.footer-li {
+    text-align: center;
+}
+.footer-li img{
+    width: 35px;
+}
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+.footer-column{
+    line-height: 2em;
+}
+.footer-blog-cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-blog-col {
+    border: 1px solid black;
+    flex: 50%;
+}
+
 /* Ipad and Desktop Size */
 @media screen and (min-width: 768px){
     h2{
@@ -379,13 +554,20 @@ label,.search-input, .form-icon {
         left: 20px;
         padding: 10px 10px 0px 10px;
     }
-    .col-sm-pop{
-        padding-right: 105px;
-    }
-    
+
     .col-sm-img {
         width: 336px;
     }
+    /* Service */
+    .service{
+        margin: 50px 100px;
+    }
+    /* Popular Destinations */
+    .trans-btn{
+        margin: 59px 7px;
+        padding: 12px 20px;
+    }
+    
     .pop-rating{
         top: 168px;
         left: 343px;
@@ -397,8 +579,37 @@ label,.search-input, .form-icon {
     }
     .pop-rows{
         margin: 0 100px;
+        
+    }
+    .contact-row{
+        margin: 0 50px;
+        flex-direction: row;
+    }
+    .col-contact-1, .col-contact-2{
+        padding: 15px;
+        margin: 70px 10px;      
+    }
+    .col-contact-1, .col-contact-2{
+        line-height: 3em;
+    }
+    
+    .submit-input{
+        padding: 10px 20px;
+        width:100%;
     }
 
+    /* Footer Section */
+    .footer-bottom {
+        display: flex;
+        
+    }
+    .footer-top{
+        flex-direction: row;
+    }
+    .footer-column {
+        flex: 25%;
+    }
+    
     
 }
 
@@ -431,8 +642,6 @@ label,.search-input, .form-icon {
         display: block;
     }
 /* hero sexction */
-
-    
     .trip-search-form{
         flex-direction: row;
     }
@@ -460,7 +669,6 @@ label,.search-input, .form-icon {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    
     }
     .about-img{
         padding: 0px 10px 0px 0px;
@@ -473,14 +681,39 @@ label,.search-input, .form-icon {
         top: 127px;
         left: 40px;
         right: 40px;
-        
     }
+    /* Popular Destination */
     .col-sm-pop {
         padding: 0;
-        margin: 20px;
     }
     .pop-rows{
         margin: 0;
+        
+    }
+
+    /* Amazing Journey */
+    .amazing-journey {
+        padding: 50px 100px;
+    }
+    /* Discover Places by Interest */
+    .discover-places{
+        margin: 50px 100px 50px 0px;
+    }
+    /* Hear from Our Guests */
+    .guests-section{
+        margin: 50px 100px;
+    }
+    /* Unique Experience */
+    .unique-exp{
+        margin: 50px 100px;
+    }
+    /* European cities with most beautiful architecture. */
+    .book-now{
+        padding: 50px 100px;
+    }
+    /* latest-blogs */
+    .latest-blogs{
+        margin: 50px 100px;   
     }
 
     .pop-sm-img {
@@ -492,6 +725,62 @@ label,.search-input, .form-icon {
         right: -2px;
         padding: 8px;
     }
+    /* Portfolio */
+    .pop-destinations {
+        margin: 50px 100px;
+    }
     
+    
+    /* Our team */
+    .team-row{
+        margin: 0 100px;
+    }
+    .team{
+        padding-right: 20px;
+        
+    }
+    .team-col-2{
+        flex: 30%;
+        display: flex;
+        flex-direction: row;
+    }
+    .team-info{
+        left: 0px;
+        right: 21px;
+    }
+    /* Contact Section */
+    .contact-row{
+        margin: 0 300px;
+    }
+    .col-contact-1, .col-contact-2{
+        flex: 50%;
+        padding: 20px;
+        margin: 45px 20px;
+        
+    }
+    .col-contact-1{
+        background-color: white;
+        line-height: 5em;
+    }
+    .col-contact-2{
+        line-height: 3em;
+    }
+    
+    .submit-input{
+        padding: 10px 20px;
+        width:100%;
+    }
+    
+    
+    /* Footer Section */
+    .footer-bottom, .footer-top{
+        margin: 0 100px;
+    }
+    .footer-navigation{
+        margin: 0 100px;
+    }
+    .footer-line{
+        margin: 0 100px;
+    }
 
 }
