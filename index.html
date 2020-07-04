@@ -48,14 +48,14 @@
                  <div class="form-div">
                     <img src="./img/trip-type-icon.svg" alt="Trip Type Icon" class="form-icon">
                     <label for="trip type">Trip Type</label>
-                    <select class="search-input" name="trip type" id="trip type">
+                    <select class="search-input input" name="trip type" id="trip type">
                         <option value="ice surfing">Ice Surfing</option>
                     </select>
                  </div>
                  <div class="form-div">
                     <img src="./img/destination-icon.svg" alt="Destination Icon" class="form-icon">
                     <label for="destination">Destination</label>            
-                    <select class="search-input" name="destination" id="destination">
+                    <select class="search-input input" name="destination" id="destination">
                         <option value="new zealand">New Zealand</option>
                     </select>
                  </div>          
@@ -79,11 +79,12 @@
                     <div class="row-1">
                             <h2>About Travel Master</h2>
                             <h3 class="about-sub-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum <br>
-                            libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus enim dicta laborum esse <br>
-                            aliquam rem assumenda dolores.<br>
+                            <p class="about-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti nulla,hic <br>
+                            voluptatibus eum voluptatum libero suscipit nemo voluptates cupiditate, ipsum provident facere modi tempora ducimus<br>
+                            enim dicta laborum esse aliquam rem assumenda dolores.
+                            <br> 
                             <br>
-                            Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates.</p>   
+                            Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates.</p>
                     </div>
                     <div class="row-2">
                         <img class="about-img" src="./img/about-trip-advisor.svg" alt="about-trip-advisor">
@@ -99,7 +100,7 @@
         <!-- Latest Trips -->
         <div class="latest-trips">
             <div class="row">
-                <div class="col-3">
+                <div class="col-3 latest-trips-row-1">
                     <h2>Latest Trips</h2>
                     <h3>Lorem ipsum dolor sit amet, consetetur<br>
                     sadipscing.</h3>
@@ -111,24 +112,22 @@
                     <button class="btn orange-btn">Join Now</button>
                 </div>
                 
-                <div class="col-4">
+                <div class="col-4 latest-trips-row">
                     <div class="col-sm-4">    
-                        <div class="col-sm-img">
-                            <div class="col-sm-sec">
-                                 <img class="col-sm-img" src="./img/ice-surfing.svg" alt="ice-surfing">
-                                    <div class="days">
-                                        <div class="days-row days-row-1">
-                                            <p>3</p>
-                                            <p>16</p>
-                                            <p>Ice Surfing</p>
-                                        </div>
-                                        <div class="days-row">
-                                            <p>Days</p>
-                                            <p>Group Size</p>
-                                            <p>Trip Type</p>   
-                                        </div>        
-                                    </div>
-                            </div>  
+                        <div class="col-sm-sec">
+                            <img class="col-sm-img" src="./img/ice-surfing.svg" alt="ice-surfing">
+                            <div class="days">
+                                <div class="days-row days-row-1">
+                                    <p>3</p>
+                                    <p>16</p>
+                                    <p>Ice Surfing</p>
+                                </div>
+                                <div class="days-row">
+                                    <p>Days</p>
+                                    <p>Group Size</p>
+                                    <p>Trip Type</p>   
+                                </div>        
+                            </div>
                         </div>               
                         <h4 class="col-4-h4">Ice Surfing 101: What you<br>
                             need to know</h4>
@@ -147,22 +146,20 @@
                         </div>       
                     </div> 
                     <div class="col-sm-4">    
-                                <div class="col-sm-img">
-                                    <div class="col-sm-sec">
-                                         <img class="col-sm-img" src="./img/boating.svg" alt="boating-fewa-lake">
-                                            <div class="days">
-                                                <div class="days-row days-row-1">
-                                                    <p>3</p>
-                                                    <p>16</p>
-                                                    <p>Boating</p>
-                                                </div>
-                                                <div class="days-row">
-                                                    <p>Days</p>
-                                                    <p>Group Size</p>
-                                                    <p>Trip Type</p>   
-                                                </div>        
+                            <div class="col-sm-sec">
+                                    <img class="col-sm-img" src="./img/boating.svg" alt="boating-fewa-lake">
+                                        <div class="days">
+                                            <div class="days-row days-row-1">
+                                                <p>3</p>
+                                                <p>16</p>
+                                                <p>Boating</p>
                                             </div>
-                                    </div>  
+                                            <div class="days-row">
+                                                <p>Days</p>
+                                                <p>Group Size</p>
+                                                <p>Trip Type</p>   
+                                            </div>        
+                                        </div>            
                                 </div>               
                                 <h4 class="col-4-h4">Boating In Fewa Lake -<br>
                                     Tourism  Kaski</h4>
@@ -181,38 +178,38 @@
                                 </div>       
                     </div>
                     <div class="col-sm-4">    
-                                    <div class="col-sm-img">
-                                        <div class="col-sm-sec">
-                                             <img class="col-sm-img" src="./img/hiking.svg" alt="hiking">
-                                                <div class="days">
-                                                    <div class="days-row days-row-1">
-                                                        <p>3</p>
-                                                        <p>16</p>
-                                                        <p>Hiking</p>
-                                                    </div>
-                                                    <div class="days-row">
-                                                        <p>Days</p>
-                                                        <p>Group Size</p>
-                                                        <p>Trip Type</p>   
-                                                    </div>        
-                                                </div>
-                                        </div>  
-                                    </div>               
-                                    <h4 class="col-4-h4">The most exciting places for<br>
-                                        Hiking Trekking in Brazil</h4>
-                                    <div class="location">
-                                            <img src="./img/location.svg" alt="location">
-                                            <p>Brazil</p>
-                                    </div>
-                                    <p class="col-sm-p">Lorem ipsum dolor sit amet, consetetur <br>
-                                    sadipscing elitr, sed diam nonumy </p>
-                                    <div class="col-sm-bottom">
-                                            <h4>$1,800.00</h4>
-                                                <div class="rating">
-                                                    <img src="./img/star.svg" alt="star">
-                                                    <p>4.6/10</p>
-                                                </div>
-                                    </div>       
+                            <div class="col-sm-sec">
+                                    <img class="col-sm-img" src="./img/hiking.svg" alt="hiking">
+                                       <div class="days">
+                                           <div class="days-row days-row-1">
+                                               <p>3</p>
+                                               <p>16</p>
+                                               <p>Hiking</p>
+                                           </div>
+                                           <div class="days-row">
+                                               <p>Days</p>
+                                               <p>Group Size</p>
+                                               <p>Trip Type</p>   
+                                           </div>        
+                                       </div>
+                            </div>            
+                                         
+                            <h4 class="col-4-h4">The most exciting places for<br>
+                                Hiking Trekking in Brazil</h4>
+                            <div class="location">
+                                    <img src="./img/location.svg" alt="location">
+                                    <p>Brazil</p>
+                            </div>
+                            <p class="col-sm-p">Lorem ipsum dolor sit amet, consetetur <br>
+                            sadipscing elitr, sed diam nonumy </p>
+                            <div class="col-sm-bottom">
+                                    <h4>$1,800.00</h4>
+                                        <div class="rating">
+                                            <img src="./img/star.svg" alt="star">
+                                            <p>4.6/10</p>
+                                        </div>
+                            </div>                        
+                                       
                     </div>   
                 </div>
             </div>
@@ -250,7 +247,6 @@
                         </div>
             </div>
         </div>
-        
         <!-- Popular Destination -->
         <div class="pop-destinations">
             <div class="pop-heading">
@@ -264,17 +260,17 @@
             </div>
             <div class="pop-rows">
                 <div class="col-sm-pop">    
-                        <div class="col-sm-img">
-                            <div class="col-sm-sec">
-                                 <img class="pop-sm-img" src="./img/popular-des-1.svg" alt="popular-des-1">
-                                    <div class="pop-rating">
-                                        <div class="rating">
-                                            <img src="./img/star.svg" alt="star">
-                                            <p>4.6/10</p>
-                                        </div>      
-                                    </div>
-                            </div>  
-                        </div>               
+                    
+                    <div class="col-sm-sec">
+                        <img class="pop-sm-img" src="./img/popular-des-1.svg" alt="popular-des-1">
+                            <div class="pop-rating">
+                                    <div class="rating">
+                                        <img src="./img/star.svg" alt="star">
+                                        <p>4.6/10</p>
+                                    </div>                 
+                            </div>
+                    </div>  
+                          
                         <h4 class="pop-h4">Boating in Fewa Lake</h4>
                         <div class="pop-location">
                                 <img src="./img/location.svg" alt="location">
@@ -284,7 +280,7 @@
                         <h4 class="pop-h4">$2,500.00</h4>       
                 </div>
                 <div class="col-sm-pop">    
-                        <div class="col-sm-img">
+                        
                             <div class="col-sm-sec">
                                  <img class="pop-sm-img" src="./img/popular-des-2.svg" alt="popular-des-2">
                                     <div class="pop-rating">
@@ -293,7 +289,7 @@
                                             <p>7.6/10</p>
                                         </div>      
                                     </div>
-                            </div>  
+                            
                         </div>               
                         <h4 class="pop-h4">Boating in Fewa Lake</h4>
                         <div class="pop-location">
@@ -305,7 +301,7 @@
                         <h4 class="pop-h4">$1,800.00</h4>       
                 </div>
                 <div class="col-sm-pop">    
-                        <div class="col-sm-img">
+                       
                             <div class="col-sm-sec">
                                  <img class="pop-sm-img" src="./img/popular-des-3.svg" alt="popular-des-3">
                                     <div class="pop-rating">
@@ -315,7 +311,7 @@
                                         </div>      
                                     </div>
                             </div>  
-                        </div>               
+                            
                         <h4 class="pop-h4">Boating in Fewa Lake</h4>
                         <div class="pop-location">
                                 <img src="./img/location.svg" alt="location">
@@ -325,7 +321,7 @@
                         <h4 class="pop-h4">$1,900.00</h4>       
                 </div>
                 <div class="col-sm-pop">    
-                        <div class="col-sm-img">
+                        
                             <div class="col-sm-sec">
                                  <img class="pop-sm-img" src="./img/popular-des-4.svg" alt="popular-des-4">
                                     <div class="pop-rating">
@@ -335,7 +331,7 @@
                                         </div>      
                                     </div>
                             </div>  
-                        </div>               
+                                
                         <h4 class="pop-h4">Boating in Fewa Lake</h4>
                         <div class="pop-location">
                                 <img src="./img/location.svg" alt="location">
@@ -345,7 +341,7 @@
                         <h4 class="pop-h4">$4,500.00</h4>       
                 </div>
                 <div class="col-sm-pop">    
-                        <div class="col-sm-img">
+                        
                             <div class="col-sm-sec">
                                  <img class="pop-sm-img" src="./img/popular-des-5.svg" alt="popular-des-5">
                                     <div class="pop-rating">
@@ -355,7 +351,7 @@
                                         </div>      
                                     </div>
                             </div>  
-                        </div>               
+                                
                         <h4 class="pop-h4">Boating in Fewa Lake</h4>
                         <div class="pop-location">
                                 <img src="./img/location.svg" alt="location">
@@ -365,7 +361,7 @@
                         <h4 class="pop-h4">$4,999.00</h4>       
                 </div>
                 <div class="col-sm-pop">    
-                        <div class="col-sm-img">
+                        
                             <div class="col-sm-sec">
                                  <img class="pop-sm-img" src="./img/popular-des-6.svg" alt="popular-des-6">
                                     <div class="pop-rating">
@@ -374,7 +370,7 @@
                                             <p>7.6/10</p>
                                         </div>      
                                     </div>
-                            </div>  
+                      
                         </div>               
                         <h4 class="pop-h4">Boating in Fewa Lake</h4>
                         <div class="pop-location">
@@ -391,7 +387,7 @@
             <div class="row">
                 <div class="col-3">
                     <h2>An Amazing Journey<br>
-                            Through the Mountains</h2>
+                    Through the Mountains</h2>
                     <h3>Featured Video</h3>
                     <p>Lorem ipsum dolor sit amet, consetetur <br>
                         sadipscing elitr, sed diam nonumy <br>
@@ -402,7 +398,7 @@
                 </div>
                     
                 <div class="col-4">
-                    <img src="./img/mountain-view-video.svg" alt="mountain-view-video">  
+                    <img src="./img/mountain-view-video.svg" alt="mountain-view-video" class="mountain-img">  
                 </div>
             </div>
         </div>
@@ -417,79 +413,74 @@
                         Explore All
                     </button>
                 </div>
-                <div class="pop-rows">
-                    <div class="col-sm-pop">    
-                            <div class="col-sm-img">
-                                <div class="col-sm-sec">
-                                     <img class="pop-sm-img" src="./img/tour-package-1.svg" alt="tour-package-1">
-                                        <div class="pop-rating">
-                                            <div class="rating">
+                <div class="tour-rows">
+                    <div class="col-sm-pop">
+                        <div class="col-sm-sec">
+                            <img class="tour-img" src="./img/tour-package-1.svg" alt="tour-package-1">
+                                <div class="tour-rating">
+                                        <div class="rating">
                                                 <img src="./img/star.svg" alt="star">
                                                 <p>7.6/10</p>
-                                            </div>      
-                                        </div>
-                                </div>  
-                            </div>               
-                            <h4 class="pop-h4">Winter Tour and Detour in the<br>
-                                    Magical Iceland</h4> 
-                            <p>3 Days, 2 Night | Jungle Safari</p> 
-                            <p class="col-sm-p">Lorem ipsum dolor sit amet, consetetur sadipscing<br>
-                                 elitr, sed diam nonumy </p>                            
-                            <div class="col-sm-bottom">
-                                <button class="btn black-btn">Book Now</button>
-                                <h4 class="pop-h4">$1,999.00</h4>  
-                            </div>       
+                                            </div>                     
+                                </div>
+                                <h4 class="pop-h4">Winter Tour and Detour in the<br>
+                                        Magical Iceland</h4> 
+                                <p class="tour-p">3 Days, 2 Night | Jungle Safari</p> 
+                                <p class="col-sm-p">Lorem ipsum dolor sit amet, consetetur sadipscing<br>
+                                    elitr, sed diam nonumy </p>                            
+                                <div class="tour-row-bottom">
+                                    <button class="btn black-btn">Book Now</button>
+                                    <h4 class="tour-h4">$1,999.00</h4>  
+                                </div>       
+                        </div>
                     </div>
                     <div class="col-sm-pop">    
-                            <div class="col-sm-img">
-                                <div class="col-sm-sec">
-                                     <img class="pop-sm-img" src="./img/tour-package-2.svg" alt="tour-package-2">
-                                        <div class="pop-rating">
+                       <div class="col-sm-sec">
+                                     <img  class="tour-img" src="./img/tour-package-2.svg" alt="tour-package-2">
+                                        <div class="tour-rating">
                                             <div class="rating">
                                                 <img src="./img/star.svg" alt="star">
                                                 <p>7.6/10</p>
                                             </div>      
                                         </div>
-                                </div>  
+                        
                             </div>               
                             <h4 class="pop-h4">Winter Tour and Detour in the<br>
                                     Magical Iceland</h4> 
-                            <p>3 Days, 2 Night | Jungle Safari</p> 
+                            <p class="tour-p">3 Days, 2 Night | Jungle Safari</p> 
                             <p class="col-sm-p">Lorem ipsum dolor sit amet, consetetur sadipscing<br>
                                  elitr, sed diam nonumy </p>                        
-                            <div class="col-sm-bottom">
+                            <div class="tour-row-bottom">
                                 <button class="btn black-btn">Book Now</button>
-                                <h4 class="pop-h4">$1,999.00</h4>  
+                                <h4 class="tour-h4">$1,999.00</h4>  
                             </div>       
                     </div>
-                    <div class="col-sm-pop">    
-                            <div class="col-sm-img">
-                                <div class="col-sm-sec">
-                                     <img class="pop-sm-img" src="./img/tour-package-3.svg" alt="tour-package-3">
-                                        <div class="pop-rating">
-                                            <div class="rating">
-                                                <img src="./img/star.svg" alt="star">
-                                                <p>7.6/10</p>
-                                            </div>      
-                                        </div>
-                                </div>  
-                            </div>               
+                    <div class="col-sm-pop"> 
+                            <div class="col-sm-sec">
+                                    <img class="tour-img" src="./img/tour-package-3.svg" alt="tour-package-3">
+                                       <div class="tour-rating">
+                                           <div class="rating">
+                                               <img src="./img/star.svg" alt="star">
+                                               <p>7.6/10</p>
+                                           </div>      
+                                       </div>
+                            </div>                   
                             <h4 class="pop-h4">Exploring the Wonders of <br>
                                 Abu Dubai</h4> 
-                            <p>3 Days, 2 Night | Jungle Safari</p>  
+                            <p class="tour-p">3 Days, 2 Night | Jungle Safari</p>  
                             <p class="col-sm-p">Lorem ipsum dolor sit amet, consetetur sadipscing<br>
                                  elitr, sed diam nonumy </p>                        
-                            <div class="col-sm-bottom">
+                            <div class="tour-row-bottom">
                                 <button class="btn black-btn">Book Now</button>
-                                <h4 class="pop-h4">$1,999.00</h4>  
+                                <h4 class="tour-h4">$1,999.00</h4>  
                             </div>       
-                    </div>               
-                </div>
+                    </div>  
+                </div>             
         </div>
         <!-- Discover Places by Interest -->
         <div class="discover-places">
                 <div class="row">
-                    <div class="row-2 col-4">
+                    <div class="discover-col-1">
                         <!-- <div class="dis-col-1">
                             
                             <div class="days">
@@ -501,18 +492,18 @@
                                 </div>        
                             </div> 
                         </div>  -->
-                        <img src="./img/hotel-n-resort.svg" alt="hotel-n-resort">
-                        <img src="./img/mountain-biking.svg" alt="mountain-biking">
-                        <img src="./img/japanese-martial-arts.svg" alt="japanese-martial-arts">
+                        <img class="discover-img" src="./img/hotel-n-resort.svg" alt="hotel-n-resort">
+                        <img class="discover-img" src="./img/mountain-biking.svg" alt="mountain-biking">
+                        <img class="discover-img" src="./img/japanese-martial-arts.svg" alt="japanese-martial-arts">
                     </div>
-                    <div class="col-3">
+                    <div class="discover-col-2">
                             <h2>Discover Places by<br> 
                             Interest</h2>
                             <h3>Everything you want and many more</h3>
                             <p>Lorem ipsum dolor sit amet, consetetur <br>
                             sadipscing elitr, sed diam nonumy.</p>
-                            <img src="./img/no-back-arrow.svg" alt="no-back-arrow">
-                            <img src="./img/with-back-arrow.svg" alt="with-back-arrow">
+                            <img class="discover-arrow-img" src="./img/no-back-arrow.svg" alt="no-back-arrow">
+                            <img class="discover-arrow-img"src="./img/with-back-arrow.svg" alt="with-back-arrow">
                     </div>
                 </div>
         </div>
@@ -527,8 +518,8 @@
                         Explore All
                     </button>
                 </div>
-                <ul class="nav-list portfolio-nav" id="nav-ul">  
-                        <li class="nav-li"><a href="#">All</a></li>
+                <ul class="portfolio-nav nav-list portfolio-nav" id="nav-ul">  
+                        <li class="nav-li portfolio-link"><a href="#">All</a></li>
                         <li class="nav-li"><a href="#">Asia</a></li>
                         <li class="nav-li"><a href="#">North America</a></li>
                         <li class="nav-li"><a href="#">Africa</a></li>
@@ -537,13 +528,13 @@
                         <li class="nav-li"><a href="#">Canada</a></li>
                 </ul>
                 <div class="pop-rows">
-                    <div class="col-sm-pop">    
-                        <img src="./img/portfolio-1.svg" alt="portfolio-1">
-                        <img src="./img/portfolio-2.svg" alt="portfolio-2">    
-                        <img src="./img/portfolio-3.svg" alt="portfolio-3">   
-                        <img src="./img/portfolio-4.svg" alt="portfolio-4">
-                        <img src="./img/portfolio-5.svg" alt="portfolio-5">    
-                        <img src="./img/portfolio-6.svg" alt="portfolio-6">     
+                    <div class="col-sm-pop col-portfolio">    
+                        <img class="portfolio-img" src="./img/portfolio-1.svg" alt="portfolio-1">
+                        <img class="portfolio-img" src="./img/portfolio-2.svg" alt="portfolio-2">    
+                        <img class="portfolio-img" src="./img/portfolio-3.svg" alt="portfolio-3">   
+                        <img class="portfolio-img" src="./img/portfolio-4.svg" alt="portfolio-4">
+                        <img class="portfolio-img" src="./img/portfolio-5.svg" alt="portfolio-5">    
+                        <img class="portfolio-img" src="./img/portfolio-6.svg" alt="portfolio-6">     
                     </div>
 
                 </div>
@@ -557,36 +548,37 @@
                         <h3>See what our guests have to say about us,<br> 
                         our locations and services.</h3>
                         <button class="btn orange-btn">Leave a Review</butveton>
-                        <button class="btn trans-btn">View All Review</button>
+                        <button class="guests-btn btn">View All Review</button>
                     </div>                   
                     <div class="col-4">
-                        <div class="col-sm-4">    
+                        <div class="col-sm-4">
                             <div class="col-sm-sec">
-                                     <p class="col-sm-p">Lorem ipsum dolor sit amet, consetetur sadipscing <br>
+                                    <p class="col-sm-p">Lorem ipsum dolor sit amet, consetetur sadipscing <br>
                                         elitr, sed diam nonumy eirmod tempor invidunt ut <br>
                                         labore et dolore magna aliquyam.</p>      
-                                        <div class="days">
-                                            <div class="days-row days-row-1">
+                                    <div class="guest-row">
+                                            <div class="guests-col-1">
                                                 <img src="./img/jasan-santa.svg" alt="jasan-santa">
                                             </div>
-                                            <div class="days-row">
+                                            <div class="guests-col-2">
                                                 <img src="./img/guest-rating.svg" alt="guest-rating">
                                                 <h4>Jason Santa</h4>
                                                 <p>Web Developer</p>   
                                             </div>        
-                                        </div>
-                            </div>               
-                        </div>
+                                    </div>
+                            </div>
+                        </div>               
+                
                         <div class="col-sm-4">    
                                 <div class="col-sm-sec">
                                          <p class="col-sm-p">Lorem ipsum dolor sit amet, consetetur sadipscing <br>
                                             elitr, sed diam nonumy eirmod tempor invidunt ut <br>
                                             labore et dolore magna aliquyam.</p>      
-                                            <div class="days">
-                                                <div class="days-row days-row-1">
+                                            <div class="guest-row">
+                                                <div class="guests-col-1">
                                                     <img src="./img/guests-2.svg" alt="jasan-santa">
                                                 </div>
-                                                <div class="days-row">
+                                                <div class="guests-col-2">
                                                     <img src="./img/guest-rating.svg" alt="guest-rating">
                                                     <h4>Jason Santa</h4>
                                                     <p>Web Developer</p>   
@@ -596,9 +588,9 @@
                         </div> 
                         
                     </div>
-                <img src="./img/guests-dots-bottom.svg" alt="guests-dots-bottom"> 
+                
                 </div>
-                   
+            <img class="guest-dots" src="./img/guests-dots-bottom.svg" alt="guests-dots-bottom">        
         </div>
         <!-- Unique Experience -->
         <div class="unique-exp">
@@ -653,14 +645,13 @@
                             </div>
                         </div>
                     </div>                   
-                    <div class="col-4">
-                        <div class="col-sm-4">    
-                            <div class="col-sm-sec">
-                                <img src="img/unique-exp-1.svg" alt="unique-exp-1">
-                                <img src="img/unique-exp-2.svg" alt="unique-exp-2">
-                                <img src="img/unique-exp-3.svg" alt="unique-exp-3">
-                                <img src="img/unique-exp-4.svg" alt="unique-exp-4">                           
-                            </div>                                     
+                    <div class="col-4 unique-gallery">
+                            <div >
+                                <img class="unique-img" src="img/unique-exp-1.svg" alt="unique-exp-1">
+                                <img class="unique-img" src="img/unique-exp-2.svg" alt="unique-exp-2">
+                                <img class="unique-img" src="img/unique-exp-3.svg" alt="unique-exp-3">
+                                <img class="unique-img" src="img/unique-exp-4.svg" alt="unique-exp-4">                           
+                            </div>                                    
                         </div>                   
                     </div>
             </div>   
@@ -668,12 +659,12 @@
          <!-- European cities with most beautiful architecture. -->
          <div class="book-now">
                 <div class="row">
-                    <div class="row-2 col-4">
-                        <div class="dis-col-1">
-                            <img src="./img/book-now-watch-img.svg" alt="book-now-watch-img">
+                    <div class="row-2 col-4 book-now-row-1">
+                        <div class="book-col-1">
+                            <img class="book-now-img" src="./img/book-now-watch-img.svg" alt="book-now-watch-img">
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 book-now-row-2">
                             <h2>European cities with most <br>
                                 beautiful architecture.</h2>
                             <h3>Best Deal</h3>
@@ -693,34 +684,34 @@
                             consetetur.</h3>
                     </div>
                     <button class="btn trans-btn">
-                        Explore All
+                        View All Post
                     </button>
             </div>
-            <div class="">
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="./img/blog-snowmobiles.svg" alt="blog-snowmobiles">
-                            <div class="blog-img-data">
-                                <div class="blog-calender">
-                                    <div>
-                                        <img src="./img/blog-calendar.svg" alt="blog-calendar">
-                                        <p>Oct 9, 2019</p>
+           
+            <div class="row">
+                <div class="col-3 blog-col-1">
+                        <img src="./img/blog-snowmobiles.svg" alt="blog-snowmobiles">
+                         <div class="blog-img-data">
+                                    <div class="blog-calender">
+                                        <img class="blog-img" src="./img/blog-calendar.svg" alt="blog-calendar">
+                                        <p class="blog-para">Oct 9, 2019</p>   
                                     </div>
-                                </div>
-                                <div class="blog-comment">
-                                    <div>
-                                        <img src="./img/blog-comment.svg" alt="blog-comment">
-                                        <p>23</p>
+                                    <div class="blog-comment">
+                                        
+                                            <img class="blog-img" src="./img/blog-comment.svg" alt="blog-comment">
+                                            <p class="blog-para">23</p>
+                                        
                                     </div>
-                                </div>
-                                <div class="blog-likes">
-                                    <div>
-                                        <img src="./img/blog-likes.svg" alt="blog-likes">
-                                        <p>63</p>
+                                    <div class="blog-likes">
+                                            <img class="blog-img" src="./img/blog-likes.svg" alt="blog-like">
+                                            <p class="blog-para">63</p>
+                                           
+                                     
                                     </div>
-                                </div>
-                                <p>@wptravel</p>
-                            </div>
+                                    <p>@wptravel</p>
+                        </div>
+                        <h2>40 free things to do in New<br>
+                            York City</h2>
                             <div class="blog-hastags">
                                 <p>#Cityguide</p>
                                 <p>#skiing</p>
@@ -729,126 +720,122 @@
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed <br>
                             diam nonumy eirmod tempor invidunt ut labore et dolore <br>
                             magna aliquyam erat, sed diam voluptua.</p>
-                            <h2>40 free things to do in New<br>
-                                York City</h2>
-                            <button class="btn black-btn">
+                           
+                            <button class="blog-btn btn black-btn">
                                 Read More
                             </button>            
-                        </div>                   
-                        <div class="col-4">
-                            <div class="col-sm-4">    
-                                <div class="col-sm-sec">
-                                    <div class="blog-img">
-                                        <img src="img/blog-img-1.svg" alt="blog-img-1">
-                                        <h3>Top Mobile Apps for the<br>
-                                            Safest Trips Abroad</h3>
-                                        <div class="blog-img-data">
-                                                    <div class="blog-calender">
-                                                        <div>
-                                                            <img src="./img/blog-calendar.svg" alt="blog-calendar">
-                                                            <p>Oct 9, 2019</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="blog-comment">
-                                                        <div>
-                                                            <img src="./img/blog-comment.svg" alt="blog-comment">
-                                                            <p>23</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="blog-likes">
-                                                        <div>
-                                                            <img src="./img/blog-likes.svg" alt="blog-likes">
-                                                            <p>63</p>
-                                                        </div>
-                                                    </div>
-                                                    <p>@wptravel</p>
-                                        </div>
-                                    </div>
-                                    <div class="blog-img">
-                                            <img src="img/blog-img-2.svg" alt="blog-img-2">
-                                            <h3>Top Mobile Apps for the<br>
-                                                Safest Trips Abroad</h3>
-                                            <div class="blog-img-data">
-                                                        <div class="blog-calender">
-                                                            <div>
-                                                                <img src="./img/blog-calendar.svg" alt="blog-calendar">
-                                                                <p>Oct 9, 2019</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="blog-comment">
-                                                            <div>
-                                                                <img src="./img/blog-comment.svg" alt="blog-comment">
-                                                                <p>23</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="blog-likes">
-                                                            <div>
-                                                                <img src="./img/blog-likes.svg" alt="blog-likes">
-                                                                <p>63</p>
-                                                            </div>
-                                                        </div>
-                                                        <p>@wptravel</p>
+                </div>                   
+                <div class="col-4 blog-col">
+                    <div class="blog-img">
+                        <img class="blog-col-img" src="img/blog-img-1.svg" alt="blog-img-1">
+                        <div class="blog-con-info">
+                                <h3>Top Mobile Apps for the<br>
+                                    Safest Trips Abroad</h3>
+                                <div class="blog-img-data">
+                                            <div class="blog-calender">
+                                                    <img class="blog-img" src="./img/blog-col-calendar.svg" alt="blog-col-calendar">
+                                                    <p class="blog-p">Oct 9, 2019</p>
+                                                
                                             </div>
-                                    </div>
-                                     <div class="blog-img">
-                                                <img src="img/blog-img-3.svg" alt="blog-img-3">
-                                                <h3>Top Mobile Apps for the<br>
-                                                    Safest Trips Abroad</h3>
-                                                <div class="blog-img-data">
-                                                            <div class="blog-calender">
-                                                                <div>
-                                                                    <img src="./img/blog-calendar.svg" alt="blog-calendar">
-                                                                    <p>Oct 9, 2019</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="blog-comment">
-                                                                <div>
-                                                                    <img src="./img/blog-comment.svg" alt="blog-comment">
-                                                                    <p>23</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="blog-likes">
-                                                                <div>
-                                                                    <img src="./img/blog-likes.svg" alt="blog-likes">
-                                                                    <p>63</p>
-                                                                </div>
-                                                            </div>
-                                                            <p>@wptravel</p>
+                                            <div class="blog-comment">
+                                                
+                                                    <img class="blog-img" src="./img/blog-col-comment.svg" alt="blog-col-comment">
+                                                    <p class="blog-p">23</p>
+                                                
+                                            </div>
+                                            <div class="blog-likes">
+                                                    <img class="blog-img" src="./img/blog-col-like.svg" alt="blog-col-like">
+                                                    <p class="blog-p">63</p>
+                                                   
+                                             
+                                            </div>
+                                            <p class="blog-p">@wptravel</p>
+                                </div>
+                        </div>                
+                    </div>
+                    <div class="blog-img">
+                            <img class="blog-col-img" src="img/blog-img-2.svg" alt="blog-img-2">
+                            <div class="blog-con-info">
+                                    <h3>Top Mobile Apps for the<br>
+                                        Safest Trips Abroad</h3>
+                                    <div class="blog-img-data">
+                                                <div class="blog-calender">
+                                                        <img class="blog-img" src="./img/blog-col-calendar.svg" alt="blog-col-calendar">
+                                                        <p class="blog-p">Oct 9, 2019</p>
+                                                    
                                                 </div>
+                                                <div class="blog-comment">
+                                                    
+                                                        <img class="blog-img" src="./img/blog-col-comment.svg" alt="blog-col-comment">
+                                                        <p class="blog-p">23</p>
+                                                    
+                                                </div>
+                                                <div class="blog-likes">
+                                                        <img class="blog-img" src="./img/blog-col-like.svg" alt="blog-col-like">
+                                                        <p class="blog-p">63</p>
+                                                       
+                                                 
+                                                </div>
+                                                <p class="blog-p">@wptravel</p>
                                     </div>
-                                    <div class="blog-img">
-                                            <img src="img/blog-img-4.svg" alt="blog-img-4"> 
-                                                    <h3>Top Mobile Apps for the<br>
-                                                        Safest Trips Abroad</h3>
-                                                    <div class="blog-img-data">
-                                                                <div class="blog-calender">
-                                                                    <div>
-                                                                        <img src="./img/blog-calendar.svg" alt="blog-calendar">
-                                                                        <p>Oct 9, 2019</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="blog-comment">
-                                                                    <div>
-                                                                        <img src="./img/blog-comment.svg" alt="blog-comment">
-                                                                        <p>23</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="blog-likes">
-                                                                    <div>
-                                                                        <img src="./img/blog-likes.svg" alt="blog-likes">
-                                                                        <p>63</p>
-                                                                    </div>
-                                                                </div>
-                                                                <p>@wptravel</p>
-                                                    </div>
-                                    </div>                                
-                                </div>                                     
-                            </div>                   
-                        </div>
-                    </div>   
-            </div>
-
-
+                            </div> 
+                    </div>
+                    <div class="blog-img">
+                            <img class="blog-col-img" src="img/blog-img-3.svg" alt="blog-img-3">
+                            <div class="blog-con-info">
+                                    <h3>Top Mobile Apps for the<br>
+                                        Safest Trips Abroad</h3>
+                                    <div class="blog-img-data">
+                                                <div class="blog-calender">
+                                                        <img class="blog-img" src="./img/blog-col-calendar.svg" alt="blog-col-calendar">
+                                                        <p class="blog-p">Oct 9, 2019</p>
+                                                    
+                                                </div>
+                                                <div class="blog-comment">
+                                                    
+                                                        <img class="blog-img" src="./img/blog-col-comment.svg" alt="blog-col-comment">
+                                                        <p class="blog-p">23</p>
+                                                    
+                                                </div>
+                                                <div class="blog-likes">
+                                                        <img class="blog-img" src="./img/blog-col-like.svg" alt="blog-col-like">
+                                                        <p class="blog-p">63</p>
+                                                       
+                                                 
+                                                </div>
+                                                <p class="blog-p">@wptravel</p>
+                                    </div>
+                            </div> 
+                    </div> 
+                    <div class="blog-img">
+                            <img class="blog-col-img" src="img/blog-img-4.svg" alt="blog-img-4">
+                            <div class="blog-con-info">
+                                    <h3>Top Mobile Apps for the<br>
+                                        Safest Trips Abroad</h3>
+                                    <div class="blog-img-data">
+                                                <div class="blog-calender">
+                                                        <img class="blog-img" src="./img/blog-col-calendar.svg" alt="blog-col-calendar">
+                                                        <p class="blog-p">Oct 9, 2019</p>
+                                                    
+                                                </div>
+                                                <div class="blog-comment">
+                                                    
+                                                        <img class="blog-img" src="./img/blog-col-comment.svg" alt="blog-col-comment">
+                                                        <p class="blog-p">23</p>
+                                                    
+                                                </div>
+                                                <div class="blog-likes">
+                                                        <img class="blog-img" src="./img/blog-col-like.svg" alt="blog-col-like">
+                                                        <p class="blog-p">63</p>
+                                                       
+                                                 
+                                                </div>
+                                                <p class="blog-p">@wptravel</p>
+                                    </div>
+                            </div> 
+                    </div>                                                             
+                </div>
+            </div>   
         </div>
         <!-- Our Team -->
         <div class="our-team">
@@ -928,49 +915,49 @@
                                 <li>Referral program</li>
                             </ul>
                 </div>
-                <div class="footer-column">
+                <div class="footer-col-2">
                     <h3>From the Blog</h3> 
                     <div class="footer-blog-cont">
-                                <div class="footer-blog-col">
-                                        <div class="footer-blog-img">
-                                            <img src="./img/footer-blog-1.svg" alt="footer-blog-1">
-                                        </div>
-                                        <div class="footer-blog-content">
-                                            <p>7 tips for nomads<br>
-                                            on a budget trips</p>
+                        <div class="footer-blog-col">
+                                <div class="footer-blog-img">
+                                    <img src="./img/footer-blog-2.svg" alt="footer-blog-1">
+                                </div>
+                                <div class="footer-blog-content">
+                                     <p class="footer-blog-title">7 tips for nomads<br>
+                                    on a budget trips</p>
+                                    <p>Nov 14, 2020</p>   
+                                </div>        
+                        </div> 
+                        <div class="footer-blog-col">
+                                <div class="footer-blog-img">
+                                    <img src="./img/footer-blog-2.svg" alt="footer-blog-2">
+                                </div>
+                                <div class="footer-blog-content">
+                                    <p class="footer-blog-title">Enjoying The 
+                                    <br>Ride</p>
+                                    <p>Nov 14, 2020</p>   
+                                </div>        
+                        </div> 
+                        <div class="footer-blog-col">
+                                    <div class="footer-blog-img">
+                                        <img src="./img/footer-blog-3.svg" alt="footer-blog-3">
+                                    </div>
+                                    <div class="footer-blog-content">
+                                        <p class="footer-blog-title">Peaceful Easy <br>
+                                            Feeling</p>
                                             <p>Nov 14, 2020</p>   
                                         </div>        
-                                </div> 
-                                <div class="footer-blog-col">
-                                            <div class="footer-blog-img">
-                                                <img src="./img/footer-blog-2.svg" alt="footer-blog-2">
-                                            </div>
-                                            <div class="footer-blog-content">
-                                                <p>Enjoying The 
-                                                <br>Ride</p>
-                                                <p>Nov 14, 2020</p>   
-                                            </div>        
-                                </div> 
-                                <div class="footer-blog-col">
-                                            <div class="footer-blog-img">
-                                                <img src="./img/footer-blog-3.svg" alt="footer-blog-3">
-                                            </div>
-                                            <div class="footer-blog-content">
-                                                 <p>Peaceful Easy <br>
-                                                    Feeling</p>
-                                                    <p>Nov 14, 2020</p>   
-                                                </div>        
-                                </div>   
-                                <div class="footer-blog-col">
-                                            <div class="footer-blog-img">
-                                                <img src="./img/footer-blog-4.svg" alt="footer-blog-4">
-                                            </div>
-                                            <div class="footer-blog-content">
-                                                 <p>Far Away<br>
-                                                    Places</p>
-                                                <p>Nov 14, 2020</p>   
-                                            </div>        
-                                </div>   
+                        </div>   
+                        <div class="footer-blog-col">
+                                    <div class="footer-blog-img">
+                                        <img src="./img/footer-blog-4.svg" alt="footer-blog-4">
+                                    </div>
+                                    <div class="footer-blog-content">
+                                        <p class="footer-blog-title">Far Away<br>
+                                            Places</p>
+                                        <p>Nov 14, 2020</p>   
+                                    </div>        
+                        </div>            
                     
                     </div>         
                 </div>
@@ -984,20 +971,17 @@
                                     <li>Contact us</li>
                                 </ul>
                 </div>
-                <div class="footer-column">
+                <div class="footer-col-2">
                         <h3>Instagram</h3>
-                        <div class="col-4">
-                                <div class="col-sm-4">    
-                                    <div class="col-sm-sec">
-                                        <img src="./img/footer-insta-1.svg" alt="footer-insta-1">  
-                                        <img src="./img/footer-insta-2.svg" alt="footer-insta-2">
-                                        <img src="./img/footer-insta-3.svg" alt="footer-insta-3"> 
-                                        <img src="./img/footer-insta-4.svg" alt="footer-insta-4">     
-                                        <img src="./img/footer-insta-5.svg" alt="footer-insta-5">   
-                                        <img src="./img/footer-insta-6.svg" alt="footer-insta-6">               
-                                    </div>                                     
-                                </div>                   
-                            </div>
+                        <div>
+                                <img src="./img/footer-insta-1.svg" alt="footer-insta-1">  
+                                <img src="./img/footer-insta-2.svg" alt="footer-insta-2">
+                                <img src="./img/footer-insta-3.svg" alt="footer-insta-3"> 
+                                <img src="./img/footer-insta-4.svg" alt="footer-insta-4">     
+                                <img src="./img/footer-insta-5.svg" alt="footer-insta-5">   
+                                <img src="./img/footer-insta-6.svg" alt="footer-insta-6">               
+                        </div>                         
+                           
                 </div>               
         </div>
         <div class="footer-navigation">

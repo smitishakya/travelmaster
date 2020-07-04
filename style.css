@@ -19,14 +19,12 @@ h3{
     margin-bottom: 0.5em;
 }
 p{
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.5em;
     color: #959595;
 }
-/* Regular 400
-Medium 500
-Bold 700 */
+
 /* Navigation and Hero Section */
 .navigation {
     display: flex;
@@ -179,21 +177,27 @@ h1{
     }
 /* About Travel Master */
 .about-travel-master{
-    margin: 30px;
+    margin: 30px 50px;
 }
 .row {
     display: flex;
-    border: 1px solid black;
     flex-direction: column;
 }
 .col-1{
     flex: 30%;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 .col-2{
     flex: 50%;
     padding: 10px;
 }
+.row-2 {
+    display: flex;
+    flex-direction: column;
+}
+
 .about-sub-title{
     font-size: 18px;
 }
@@ -201,25 +205,31 @@ h1{
     padding: 0px 0px 10px 0px;
 }
 .about-fea-img{
-    width: 238px;
+    width: 200px;
 }
+
 /* Latest Trips */
 .latest-trips{
-    margin: 30px;
+    margin: 30px 50px;
 }
 .col-3{
     flex: 20%;
     padding: 10px;
 }
+.latest-trips-row-1, .latest-trips-row{
+    flex: 50%;
+}
 .col-4{
     flex: 50%;
     display: flex;
-    flex-direction: column;
     padding: 10px;
+    flex-direction: column;
 }
+
 .col-sm-4{
-    border: 1px solid black;
+    border: 1px solid #E8E8E8;
     line-height: 1.5em;
+    margin: 10px;
    
 }
 .days{
@@ -227,14 +237,19 @@ h1{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 95px;
-    left: 3px;
-    right: 3px;
+    top: 56px;
+    left: 15px;
+    right: 15px;
     padding: 10px 10px 0px 10px;
+
 }
+
 .days-row{
     display: flex;
     justify-content: space-between;
+}
+.days-row p{
+    padding-right:10px;
 }
 .days-row-1 p{
     font-weight: 700;
@@ -252,6 +267,8 @@ h1{
     flex-direction: row;
     justify-content: space-between;
 }
+
+
 .rating{
     display: flex;
     flex-direction: row;
@@ -262,18 +279,18 @@ h1{
 }
 .col-sm-sec{
     position: relative;
+
 }
 
 .col-4-h4{
-    margin-top: 70px;
-    padding: 0px 10px 0px 10px;
+    padding:35px 10px 0px 10px;
 }
 .col-sm-p, .col-sm-bottom{
     padding: 10px;
 }
 
 .col-sm-img {
-    width: 236px;
+    width: 197px;
 }
 
 /* Service Section  */
@@ -288,11 +305,14 @@ h1{
     text-align: center;
 }
 /* Popular Destination   */
+.pop-heading{
+    margin: 10px;
+}
 .trans-btn{
     background-color:transparent; 
     border: 1px solid black;  
     color: black;
-    margin: 85px 20px;
+    /* margin: 85px 20px; */
     padding: 6px 22px;
     font-size: 13px;
 }
@@ -303,7 +323,6 @@ h1{
     background-color: #F6F6F6;
     position: absolute;
     top: 80px;
-    left: 150px;
     right: 10px;
     padding: 3px;
 }
@@ -321,67 +340,239 @@ h1{
     padding: 0px 10px 0px 10px;
 }
 .pop-rows{
-    flex: 50%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 .col-sm-pop{
     border: 1px solid #E8E8E8;
     line-height: 1.5em;
+    margin: 10px;
 }
 /* An Amazing Journey */
 .amazing-journey {
     padding: 30px 50px;
     background-color: #F6F6F6;
 }
+.mountain-img{
+    height: 100px;
+}
 
 /* Tour Packages  */
+
+.tour-rows{
+    display: flex;
+    flex-direction: column;
+
+}
+img.tour-img {
+    width: 199px;
+}
+.tour-h4{
+    color: #4E4E4E;
+    padding: 0px 10px 0px 25px;
+    font-size: 18px;
+}
+.tour-p{
+    padding: 0px 10px 0px 10px;
+}
+.tour-row-bottom{
+    display: flex;   
+    flex-direction: row;
+}
+.tour-rating{
+    background-color: #F6F6F6;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    padding: 3px;
+}
 .black-btn{
     background-color: black;
     color: white;
+    margin: 0px 10px 10px 10px;
     border: none;
 }
 /* Discover Places by Interest */
 .discover-places{
     background-image: url(./img/discover-places-interest.svg);
     color: white;
-    margin: 30px 50px 30px 0px;
+    margin: 30px 0px 30px 0px;
 }
+.discover-col-2{
+    flex: 30%;
+    padding: 60px;
+} 
+
+.discover-col-1{
+    flex: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;  
+}
+.discover-arrow-img{
+    width: 40px;
+    margin-top: 1.5em;
+}
+
+
+
 /* Portfolio  */
 .pop-destinations {
     margin: 30px 50px;
 }
-.pop-heading {
-    display: flex;
-    justify-content: space-between;
+
+.portfolio-nav a{
+    color: #707070;
+    padding-right: 30px;
 }
-.portfolio-nav{
-    color: #959595;
+.portfolio-nav a{
+    padding-right: 30px;
 }
+.portfolio-nav {
+    margin: 0;
+    padding:0;
+}
+.col-portfolio{
+    margin:0;
+}
+
+
+.portfolio-link a{
+    color: black;
+}
+.portfolio-img{
+    width: 410px;
+}
+
 
 /* Hear from Our Guests */
 .guests-section{
     margin: 30px 50px;
+}
+.guests-btn{
+    background-color:transparent; 
+    border: 1px solid black;  
+    color: black;
+    font-size: 13px;
+    margin-left: 10px;
+}
+.guest-row{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.guests-col-2{
+    padding: 0px 10px;
+}
+.guest-dots{
+    display: flex;
+    margin: 0 auto;
 }
 
 /* Unique Experience */
 .unique-exp{
     margin: 30px 50px; 
 }
+.unique-exp-container{
+    display: flex;
+    flex-wrap: wrap;
+}
 .unique-row-1, .unique-row-2{
     border: 1px solid #C2C2C2;
+    display: flex;
+    flex: 25%;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
 }
+
+.unique-col-2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: flex-end;
+}
+.unique-img{
+    width: 400px;
+}
+.unique-gallery{
+    padding: 0px;
+    margin-top:40px;
+    flex: 50%;
+}
+
 /* European cities with most beautiful architecture. */
 .book-now{
     background-image: url(./img/book-now-back-img.svg);
     color: white;
     padding: 30px 50px;
 }
+.book-now-img{
+    width: 200px;
+}
+.book-now-row-2{
+    line-height: 2.4em;
+}
+.book-now-row-2 p{
+    color: white;
+}
+
 /* latest-blogs */
 .latest-blogs{
     margin: 30px 50px;   
 }
+.blog-col-1{
+    padding: 0px;
+}
+.blog-btn{
+    margin: 0;
+    margin-top: 1.5em;
+} 
+.blog-img{
+    position: relative;
+}
+.blog-hastags{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+}
+.blog-hastags p{
+    padding-right: 10px;
+}
+.blog-con-info{
+    position: absolute;
+    top: 125px;
+    left: 2px;
+    right: 0px;
+}
+.blog-img-data{  
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.blog-para {
+    color: black;
+}
+.blog-p{
+    color: white;
+}
+.blog-con-info h3{
+    padding: 0px 10px;
+}
+.blog-con-info h3{
+    color: white;
+}
+.blog-col-img{
+    width: 370px;
+}
+.blog-calender, .blog-comment, .blog-likes{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.blog-img{
+    margin-right:10px;
+}
+
 /* Our team */
 .philip{
     position: relative;
@@ -424,6 +615,7 @@ h1{
 .contact-sec{
     background-image: url(./img/newsletter-back-img.svg);
     color: white;
+    margin-bottom: 50px;
 }
 .contact-row{
     margin: 0 50px;
@@ -506,21 +698,45 @@ p.footer-li {
     flex-direction: column;
     margin: 0 50px;
 }
+.footer-blog-content p{
+    font-size: 12px;
+    
+}
+.footer-blog-content{
+    padding-left: 10px;
+}
+.footer-blog-col{
+    padding: 5px;
+}
+.footer-blog-title{
+    font-weight: 500;
+    color: black;
+}
 
 .footer-column{
     line-height: 2em;
 }
+.footer-blog-img{
+    display: flex;
+    align-items: flex-start;
+}
 .footer-blog-cont {
     display: flex;
     flex-wrap: wrap;
+    
 }
 .footer-blog-col {
-    border: 1px solid black;
     flex: 50%;
+    display: flex;
 }
+
+
 
 /* Ipad and Desktop Size */
 @media screen and (min-width: 768px){
+    p{
+        font-size: 17px;
+    }
     h2{
         font-size: 36px;
     }
@@ -542,27 +758,44 @@ p.footer-li {
     .about-travel-master, .latest-trips{
         margin: 50px 100px;
     }
+    .row-2{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about-img{
+        padding: 15px 20px;
+    }
     .about-sub-title{
         font-size: 20px;
     }
     .about-fea-img{
         width: 458px;
     }
+    /* Latest Trips */
     .days{
-        position: absolute;
-        top: 127px;
-        left: 20px;
+        top: 115px;
+        left: 10px;
+        right: 10px;
         padding: 10px 10px 0px 10px;
     }
-
     .col-sm-img {
         width: 336px;
     }
+    .col-4{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+ 
     /* Service */
     .service{
         margin: 50px 100px;
     }
     /* Popular Destinations */
+    .pop-heading {
+        display: flex;
+        justify-content: space-between;
+    }
     .trans-btn{
         margin: 59px 7px;
         padding: 12px 20px;
@@ -574,9 +807,7 @@ p.footer-li {
         right: -89px;
         padding: 8px;
     }
-    .pop-sm-img {
-        width: 451px;
-    }
+    
     .pop-rows{
         margin: 0 100px;
         
@@ -597,6 +828,31 @@ p.footer-li {
         padding: 10px 20px;
         width:100%;
     }
+    /* Amazing-journey Through the Mountains*/
+    .mountain-img{
+        height: 323px;
+    }
+    /* Popular Destionations  */
+    .pop-rows{
+        
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    /* Tour Packages  */
+    .tour-rows{
+        flex-direction: row;
+    }
+    img.tour-img {
+        width: 390px;
+    }
+    .tour-h4{
+        font-size: 30px;
+    }
+    /* Discover Places */
+    .discover-col-1{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
     /* Footer Section */
     .footer-bottom {
@@ -607,9 +863,11 @@ p.footer-li {
         flex-direction: row;
     }
     .footer-column {
+        flex: 10%;
+    }  
+    .footer-col-2{
         flex: 25%;
     }
-    
     
 }
 
@@ -624,6 +882,7 @@ p.footer-li {
         display: block;
     }
     .nav-logo{
+    
         width: 170px;
     }
     .hamburger{
@@ -663,8 +922,10 @@ p.footer-li {
     }
     .row-2{
         display: flex;
-        justify-content: flex-start;
+        flex-wrap: nowrap;
     } 
+
+    
     .col-2{
         display: flex;
         flex-direction: column;
@@ -674,62 +935,98 @@ p.footer-li {
         padding: 0px 10px 0px 0px;
         width: 195px;
     }
+    /* Latest Trips */
     .col-4{
+        flex-wrap: nowrap;
         flex-direction: row;
     }
-    .days{
-        top: 127px;
-        left: 40px;
-        right: 40px;
-    }
+    
     /* Popular Destination */
     .col-sm-pop {
         padding: 0;
     }
     .pop-rows{
-        margin: 0;
-        
+        margin: 0;  
+    }
+    .pop-sm-img {
+        width: 345px;
     }
 
     /* Amazing Journey */
+
     .amazing-journey {
         padding: 50px 100px;
     }
+    /* Tour  */
+    .tour-rating {
+        
+        top: 170px;
+        left: 280px;
+        right: 25px;
+        padding: 8px;
+    }
     /* Discover Places by Interest */
     .discover-places{
-        margin: 50px 100px 50px 0px;
+        margin: 50px 0px 50px 0px;
     }
+    .discover-col-1{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .discover-img{
+        width: 320px;
+    }
+    
     /* Hear from Our Guests */
     .guests-section{
         margin: 50px 100px;
     }
+
     /* Unique Experience */
     .unique-exp{
         margin: 50px 100px;
     }
     /* European cities with most beautiful architecture. */
     .book-now{
-        padding: 50px 100px;
+        padding: 0px 100px;
+    }
+    .book-now-img{
+        width: 600px;
+    }
+    .book-now-row-1{
+        position: relative;
+        flex: 35%;
+    }
+    .book-now-row-2{
+        padding: 80px 20px 25px 20px;
+    }
+    .book-col-1{
+        position: absolute;
+        top: 80px;
     }
     /* latest-blogs */
     .latest-blogs{
-        margin: 50px 100px;   
+        margin: 90px 100px;   
+    }
+    .latest-trips-row{
+        align-items: flex-start;
+        padding: 10px;
     }
 
-    .pop-sm-img {
-        width: 346px;
-    }
     .pop-rating {
         top: 115px;
-        left: 255px;
-        right: -2px;
+        left: 250px;
+        right: 8px;
         padding: 8px;
     }
     /* Portfolio */
     .pop-destinations {
         margin: 50px 100px;
     }
-    
+    /* Latest Blog */
+    .blog-col{
+        flex-wrap: wrap;
+    }
     
     /* Our team */
     .team-row{
