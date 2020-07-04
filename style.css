@@ -18,7 +18,7 @@ h3{
     font-weight: 500;
     margin-bottom: 0.5em;
 }
-p{
+p, span{
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5em;
@@ -734,7 +734,7 @@ p.footer-li {
 
 /* Ipad and Desktop Size */
 @media screen and (min-width: 768px){
-    p{
+    p, span{
         font-size: 17px;
     }
     h2{
