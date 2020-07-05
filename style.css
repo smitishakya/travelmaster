@@ -24,6 +24,10 @@ p, span{
     line-height: 1.5em;
     color: #959595;
 }
+.vertical-line{
+    border-left: 3px solid #FF8121;
+    padding-left: 25px;
+}
 
 /* Navigation and Hero Section */
 .navigation {
@@ -504,7 +508,6 @@ img.tour-img {
 
 .unique-gallery{
     padding: 0px;
-    margin-top:40px;
     flex: 50%;
     margin: 10px;
 }
