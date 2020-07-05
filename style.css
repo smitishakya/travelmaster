@@ -124,6 +124,7 @@ h1{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
     flex-direction: column;
     margin: 0px 20px;
 }
@@ -142,7 +143,7 @@ h1{
     .input{
         background-color: transparent;
         color:white; 
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 400;
     }
     label{
@@ -603,6 +604,9 @@ img.tour-img {
 
 
 /* Our team */
+.our-team{
+    margin: 30px 50px;
+}
 .philip{
     position: relative;
 }
@@ -619,21 +623,18 @@ img.tour-img {
 }
 
 .team-img{
-    min-width: 218px;
-    width: 100%;
+    width: 218px;
 }
 
 .team-social img{
     padding-right: 10px;
 }
-.team-row{
-    margin: 0 50px;
-}
-.team-col-1, .team-col-1{
+
+.team-col-1{
     flex: 30%;
 }
 .team-col-2{
-    flex: 30%;
+    flex: 50%;
     display: flex;
     flex-direction: column;
 }
@@ -785,7 +786,7 @@ p.footer-li {
     }
     .trip-search-form{
         margin: 0px 230px;
-        padding: 20px;
+        
     }
     /* About Travel Master Section */
     .about-travel-master, .latest-trips{
@@ -1034,7 +1035,7 @@ p.footer-li {
         margin: 50px 100px;
     }
     .unique-img{
-        width: 400px;
+        width: 321px;
     }
     /* European cities with most beautiful architecture. */
     .book-now{
@@ -1089,7 +1090,7 @@ p.footer-li {
         margin: 50px 100px;
     }
     .portfolio-img{
-        width: 410px;
+        width: 400px;
         
     }
     /* Latest Blog */
@@ -1115,21 +1116,30 @@ p.footer-li {
         right: 0px;
     }
     /* Our team */
-    .team-row{
-        margin: 0 100px;
+    .our-team{
+        margin: 50px 100px;
     }
+    .team-img{
+        width: 220px;
+    }
+
     .team{
-        padding-right: 20px;
-        
+        padding-left: 10px;
     }
     .team-col-2{
-        flex: 30%;
-        display: flex;
         flex-direction: row;
     }
+    .team-col-1 h2{
+        margin: 0px;
+    }
     .team-info{
-        left: 0px;
-        right: 21px;
+        top: 140px;
+        left: 10px;
+        right: 1px;
+    }
+    .team-btn{
+        margin: 0px;
+        padding: 8px 15px;
     }
     /* Contact Section */
     .contact-row{
