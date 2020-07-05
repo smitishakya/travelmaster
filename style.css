@@ -69,7 +69,7 @@ p, span{
     padding: 10px 15px;
     color: white; 
     font-weight: 500;
-    font-size: 15px;
+    font-size: 11px;
 }
 .line{
     border-bottom: 1px solid white;
@@ -229,8 +229,7 @@ h1{
 .col-sm-4{
     border: 1px solid #E8E8E8;
     line-height: 1.5em;
-    margin: 10px;
-   
+    margin-bottom: 10px;
 }
 .days{
     background-color: #F6F6F6;
@@ -306,8 +305,9 @@ h1{
 }
 /* Popular Destination   */
 .pop-heading{
-    margin: 10px;
+    margin-bottom: 10px;
 }
+
 .trans-btn{
     background-color:transparent; 
     border: 1px solid black;  
@@ -317,12 +317,12 @@ h1{
     font-size: 13px;
 }
 .pop-sm-img{
-    width: 238px;
+    width: 218px;
 }
 .pop-rating{
     background-color: #F6F6F6;
     position: absolute;
-    top: 80px;
+    top: 70px;
     right: 10px;
     padding: 3px;
 }
@@ -346,7 +346,7 @@ h1{
 .col-sm-pop{
     border: 1px solid #E8E8E8;
     line-height: 1.5em;
-    margin: 10px;
+    padding-bottom: 10px;
 }
 /* An Amazing Journey */
 .amazing-journey {
@@ -365,7 +365,7 @@ h1{
 
 }
 img.tour-img {
-    width: 199px;
+    width: 218px;
 }
 .tour-h4{
     color: #4E4E4E;
@@ -434,6 +434,7 @@ img.tour-img {
 }
 .col-portfolio{
     margin:0;
+    border: none;
 }
 
 
@@ -441,8 +442,10 @@ img.tour-img {
     color: black;
 }
 .portfolio-img{
-    width: 410px;
+    width: 219px;
+    
 }
+
 
 
 /* Hear from Our Guests */
@@ -453,8 +456,7 @@ img.tour-img {
     background-color:transparent; 
     border: 1px solid black;  
     color: black;
-    font-size: 13px;
-    margin-left: 10px;
+    margin-top: 10px;
 }
 .guest-row{
     display: flex;
@@ -463,6 +465,9 @@ img.tour-img {
 }
 .guests-col-2{
     padding: 0px 10px;
+}
+.guests-col-1 img {
+    width: 60px;
 }
 .guest-dots{
     display: flex;
@@ -492,12 +497,15 @@ img.tour-img {
     justify-content: flex-end;
 }
 .unique-img{
-    width: 400px;
+    width: 198px;
 }
+
+
 .unique-gallery{
     padding: 0px;
     margin-top:40px;
     flex: 50%;
+    margin: 10px;
 }
 
 /* European cities with most beautiful architecture. */
@@ -517,18 +525,36 @@ img.tour-img {
 }
 
 /* latest-blogs */
+
 .latest-blogs{
     margin: 30px 50px;   
 }
 .blog-col-1{
-    padding: 0px;
+    border: 1px solid #C2C2C2;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.blog-col{
+    padding: 0;
 }
 .blog-btn{
     margin: 0;
     margin-top: 1.5em;
 } 
+.blog-row-1-img{
+    width: 219px;
+    
+}
 .blog-img{
     position: relative;
+    margin-right:10px;
+    
+}
+.blog-con-info h3{
+    font-size: 15px;
+}
+.blog-image{
+    width: 15px;
 }
 .blog-hastags{
     display: flex;
@@ -540,38 +566,41 @@ img.tour-img {
 }
 .blog-con-info{
     position: absolute;
-    top: 125px;
+    top: 67px;
     left: 2px;
+    margin: 5px;
     right: 0px;
 }
 .blog-img-data{  
     display: flex;
-    padding: 10px;
     justify-content: space-between;
+    padding: 0px;
 }
 .blog-para {
-    color: black;
+    color:#707070;
+    font-size: 10px;
+}
+.blog-insta-p{
+    font-size: 10px;
 }
 .blog-p{
     color: white;
+    font-size: 12px;
 }
-.blog-con-info h3{
-    padding: 0px 10px;
-}
+
 .blog-con-info h3{
     color: white;
 }
-.blog-col-img{
-    width: 370px;
+
+.blog-col-img {
+    width: 218px;
 }
 .blog-calender, .blog-comment, .blog-likes{
     display: flex;
     flex-direction: row;
     color: white;
 }
-.blog-img{
-    margin-right:10px;
-}
+
 
 /* Our team */
 .philip{
@@ -581,9 +610,9 @@ img.tour-img {
     background-color: #0000009e;
     position: absolute;
     text-align: center;
-    top: 134px;
-    left: -1px;
-    right: -2px;
+    top: 141px;
+    left: 1px;
+    right: 0px;
 }
 .team-info p{
     color: white;
@@ -657,6 +686,7 @@ img.tour-img {
 }
 .footer-nav-list {
     display: flex;
+    flex-wrap: wrap;
 }
 .footer-nav-li {
     display: inline-block;
@@ -737,6 +767,9 @@ p.footer-li {
     p, span{
         font-size: 17px;
     }
+    .btn{
+        font-size: 15px;
+    }
     h2{
         font-size: 36px;
     }
@@ -792,9 +825,12 @@ p.footer-li {
         margin: 50px 100px;
     }
     /* Popular Destinations */
+
     .pop-heading {
         display: flex;
         justify-content: space-between;
+        margin: 0px;
+        
     }
     .trans-btn{
         margin: 59px 7px;
@@ -810,6 +846,7 @@ p.footer-li {
     
     .pop-rows{
         margin: 0 100px;
+        
         
     }
     .contact-row{
@@ -834,9 +871,9 @@ p.footer-li {
     }
     /* Popular Destionations  */
     .pop-rows{
-        
+        border: 1px solid black;
         justify-content: space-between;
-        flex-direction: row;
+
     }
     /* Tour Packages  */
     .tour-rows{
@@ -852,6 +889,13 @@ p.footer-li {
     .discover-col-1{
         flex-direction: row;
         flex-wrap: wrap;
+    }
+    /* Hear from our Guests  */
+    .guests-btn{
+        margin-left: 10px;
+    }
+    .guests-col-1 img {
+        width: 88px;
     }
 
     /* Footer Section */
@@ -944,6 +988,7 @@ p.footer-li {
     /* Popular Destination */
     .col-sm-pop {
         padding: 0;
+        margin: 10px;
     }
     .pop-rows{
         margin: 0;  
@@ -981,10 +1026,16 @@ p.footer-li {
     .guests-section{
         margin: 50px 100px;
     }
+    .col-sm-4{
+        margin-right: 10px;
+    }
 
     /* Unique Experience */
     .unique-exp{
         margin: 50px 100px;
+    }
+    .unique-img{
+        width: 400px;
     }
     /* European cities with most beautiful architecture. */
     .book-now{
@@ -1012,7 +1063,22 @@ p.footer-li {
         align-items: flex-start;
         padding: 10px;
     }
+    .blog-row-1-img{
+        width: 458px;
+    }
+    .blog-img-data{  
+        padding: 10px;
+    }
+    .blog-col-img{
+        width: 370px;
+    }
 
+    .blog-para {
+        font-size: 14px;
+    }
+    .blog-insta-p{
+        font-size: 14px;
+    }
     .pop-rating {
         top: 115px;
         left: 250px;
@@ -1023,11 +1089,32 @@ p.footer-li {
     .pop-destinations {
         margin: 50px 100px;
     }
+    .portfolio-img{
+        width: 410px;
+        
+    }
     /* Latest Blog */
     .blog-col{
         flex-wrap: wrap;
+        margin-left: 10px;
     }
     
+    .blog-image{
+        width: 22.5px;
+    }
+    .blog-con-info h3{
+        font-size: 22px;
+        margin-left: 10px;
+    }
+    .blog-p{
+        font-size: 17px;
+    }
+    .blog-con-info{
+        position: absolute;
+        top: 125px;
+        left: 2px;
+        right: 0px;
+    }
     /* Our team */
     .team-row{
         margin: 0 100px;
