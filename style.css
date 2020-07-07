@@ -226,6 +226,9 @@ h1{
     flex: 20%;
     padding: 10px;
 }
+.latest-container{
+    width: 197px;
+}
 .latest-trips-row-1, .latest-trips-row{
     flex: 50%;
 }
@@ -569,7 +572,6 @@ h1{
 /* latest-blogs */
 .col-8{
     flex:26%;
-
 }
 
 .latest-blogs{
@@ -587,14 +589,13 @@ h1{
 .blog-btn{
     margin: 0;
     margin-top: 1.5em;
+    margin-bottom: 1.5em;
 } 
 .blog-row-1-img{
     width: 219px;
     
 }
-.blog-img-data {
-    width: 219px;
-}
+
 .blog-img{
     position: relative;
     margin-right:10px;
@@ -680,6 +681,7 @@ h1{
     padding: 6px 22px;
     font-size: 13px;
     margin-left: 25px;
+    margin-bottom: 1.5em;
     
 }
 
@@ -868,14 +870,19 @@ p.footer-li {
         width: 458px;
     }
     /* Latest Trips */
+ 
     .days{
         top: 115px;
         left: 10px;
         right: 10px;
         padding: 10px 10px 0px 10px;
     }
-    .col-sm-img {
+    .col-sm-img, .latest-container {
         width: 317px
+    }
+    .latest-container {
+        margin-left: 20px;
+        margin-right: 4em;
     }
     .col-4{
         flex-wrap: wrap;
@@ -923,7 +930,7 @@ p.footer-li {
     }
     /* Amazing-journey Through the Mountains*/
     .mountain-img{
-        height: 323px;
+        height: 287px;
     }
     /* Popular Destionations  */
     .pop-rows{
@@ -936,6 +943,9 @@ p.footer-li {
     }
     
     /* Tour Packages  */
+    .tour-rows {
+        margin: 0px 100px;
+    }
    
     img.tour-img, .col-sm-tour {
         width: 390px;
@@ -943,10 +953,20 @@ p.footer-li {
     .tour-h4{
         font-size: 30px;
     }
+    .tour-rating {
+        
+        top: 170px;
+        left: 280px;
+        right: 25px;
+        padding: 8px;
+    }
     /* Discover Places */
     .discover-col-1{
         flex-direction: row;
         flex-wrap: wrap;
+    }
+    .discover-col-1, .discover-col-2 {
+        margin: 0 170px;
     }
     /* Hear from our Guests  */
     .guests-btn{
@@ -954,6 +974,23 @@ p.footer-li {
     }
     .guests-col-1 img {
         width: 88px;
+    }
+    .book-now-row-2, .book-now-row-1{
+        margin: 0 100px;
+    }
+    /* Our latest Blogs */
+    .col-8{
+     margin: 0px 100px;
+    }
+    .blog-col-1{
+        width: 370px;
+    }
+    .blog-row-1-img{
+        width: 460px;
+    }
+    .blog-img{
+        width: 20%;
+        margin:10px 70px;
     }
     /* Team */
     .our-team{
@@ -965,6 +1002,10 @@ p.footer-li {
     }
     .team{
         margin: 10px;
+    }
+    /* European cities */
+    .book-now-img {
+        width: 451px;
     }
 
     /* Footer Section */
@@ -983,7 +1024,28 @@ p.footer-li {
     }
     
 }
-
+/* Ipad Pro Size */
+@media screen and (min-width: 1024px){
+    .tour-rows{
+        margin: 0px 50px;
+    }
+    .col-sm-tour{
+        margin-right: 10px;
+    }
+    .book-now-row-2, .book-now-row-1{
+        margin: 0 250px;
+    }
+    .discover-col-1,.discover-col-2 {
+        margin: 0 280px;
+    }
+    .col-8{
+        margin: 0px 232px;
+    }
+    .col-7{
+        margin: 0px 163px;
+    }
+}
+/* Only Desktop Size */
 @media only screen and (min-width: 1025px){
     /* Navigation Menu */
     .navigation{
@@ -1049,11 +1111,12 @@ p.footer-li {
         width: 195px;
     }
     /* Latest Trips */
+
     .col-4{
         flex-wrap: nowrap;
         flex-direction: row;
     }
-    .col-sm-img {
+    .col-sm-img, .latest-container{
         width: 280px
     }
     
@@ -1075,13 +1138,9 @@ p.footer-li {
     .amazing-journey {
         padding: 50px 100px;
     }
-    /* Tour  */
-    .tour-rating {
-        
-        top: 170px;
-        left: 280px;
-        right: 25px;
-        padding: 8px;
+    /* Tour Package */
+    .tour-rows {
+        margin: 0px;
     }
     /* Discover Places by Interest */
     .discover-places{
@@ -1130,22 +1189,28 @@ p.footer-li {
         top: 80px;
     }
     /* latest-blogs */
+    .blog-row-1-img, .blog-col-1{
+        width: 370px;
+    }
+    .col-8{
+        flex: 30%;
+    }
     .latest-blogs{
         margin: 90px 100px;   
+    }
+    .blog-img-data{
+        width: 360px;
     }
     .latest-trips-row{
         align-items: flex-start;
         padding: 10px;
     }
-    .blog-row-1-img, .blog-col-1{
-        width: 370px;
+    .col-8{
+        margin: 0px;
     }
-    .blog-img-data{  
-        padding: 10px;
-        width: 370px;
-    }
+    
     .blog-h2{
-        font-size: 20px;
+        font-size: 25px;
         margin: 0px;
     }
     .blog-btn{
@@ -1153,6 +1218,11 @@ p.footer-li {
     }
     .blog-col-img{
         width: 370px;
+    }
+    .blog-img{
+        margin-right:10px;
+        width: 48%;
+        margin:0px;
     }
 
     .blog-para {
