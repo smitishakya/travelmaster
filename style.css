@@ -368,15 +368,14 @@ h1{
 }
 
 /* Tour Packages  */
-
 .tour-rows{
     display: flex;
-    flex-direction: column;
-
+    flex-wrap: wrap;
 }
-img.tour-img {
+.col-sm-tour, img.tour-img {
     width: 218px;
 }
+
 .tour-h4{
     color: #4E4E4E;
     padding: 0px 10px 0px 25px;
@@ -427,7 +426,7 @@ img.tour-img {
 
 
 /* Portfolio  */
-.pop-destinations {
+.pop-destinations, .portfolio {
     margin: 30px 50px;
 }
 
@@ -482,37 +481,73 @@ img.tour-img {
 }
 
 /* Unique Experience */
+.col-6{
+    flex:50%;
+    padding: 10px;
+}
+.col-7{
+    flex: 60%;
+}
+.col-7::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.col-uni-img{
+    float: left;
+    width: 50%;
+}
 .unique-exp{
     margin: 30px 50px; 
 }
+.unique-image{
+    width: 35px;
+}
+.unique-container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.unique-row{
+    float: left;
+    width: 80%;
+    border: 1px solid #C2C2C2;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 25px;
+    height: 100px;
+}
+
 .unique-exp-container{
     display: flex;
     flex-wrap: wrap;
     margin-left: 25px;
 }
-.unique-row-1, .unique-row-2{
-    border: 1px solid #C2C2C2;
-    display: flex;
-    flex: 25%;
-    margin: 10px 10px 10px 0px;
-    padding: 10px;
+
+.unique-col-1 h2{
+    font-size: 30px;
+    margin: 0px;
+}
+.unique-col-1{
+    padding-left: 20px;
 }
 
 .unique-col-2{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding-left: 10px;
-    justify-content: flex-end;
-}
-.unique-img{
-    width: 198px;
+    justify-content: space-around;
 }
 
+
+.unique-img{
+    width: 100%;
+}
 
 .unique-gallery{
-    padding: 0px;
+    padding: 84px;
     flex: 50%;
-    margin: 10px;
+    margin: 0px;
 }
 
 /* European cities with most beautiful architecture. */
@@ -532,6 +567,10 @@ img.tour-img {
 }
 
 /* latest-blogs */
+.col-8{
+    flex:26%;
+
+}
 
 .latest-blogs{
     margin: 30px 50px;   
@@ -559,7 +598,8 @@ img.tour-img {
 .blog-img{
     position: relative;
     margin-right:10px;
-    
+    float: left;
+    width: 48%;
 }
 .blog-con-info h3{
     font-size: 15px;
@@ -890,11 +930,14 @@ p.footer-li {
         justify-content: space-between;
 
     }
-    /* Tour Packages  */
-    .tour-rows{
-        flex-direction: row;
+    /* Unique Experience */
+    .unique-row{
+        width: 44%;
     }
-    img.tour-img {
+    
+    /* Tour Packages  */
+   
+    img.tour-img, .col-sm-tour {
         width: 390px;
     }
     .tour-h4{
@@ -1018,13 +1061,13 @@ p.footer-li {
     .col-sm-pop {
         padding: 0;
         margin: 10px;
-        width: 345px;
+        width: 390px;
     }
     .pop-rows{
         margin: 0;  
     }
     .pop-sm-img {
-        width: 345px;
+        width: 390px;
     }
 
     /* Amazing Journey */
@@ -1064,8 +1107,9 @@ p.footer-li {
     .unique-exp{
         margin: 50px 100px;
     }
-    .unique-img{
-        width: 321px;
+
+    .unique-row{
+        width: 35%;
     }
     /* European cities with most beautiful architecture. */
     .book-now{
@@ -1094,11 +1138,18 @@ p.footer-li {
         padding: 10px;
     }
     .blog-row-1-img, .blog-col-1{
-        width: 458px;
+        width: 370px;
     }
     .blog-img-data{  
         padding: 10px;
-        width: 458px;
+        width: 370px;
+    }
+    .blog-h2{
+        font-size: 20px;
+        margin: 0px;
+    }
+    .blog-btn{
+        margin: 0px;
     }
     .blog-col-img{
         width: 370px;
@@ -1112,12 +1163,12 @@ p.footer-li {
     }
     .pop-rating {
         top: 115px;
-        left: 250px;
+        left: 296px;
         right: 8px;
         padding: 8px;
     }
     /* Portfolio */
-    .pop-destinations {
+    .pop-destinations, .portfolio{
         margin: 50px 100px;
     }
     .portfolio-img{
