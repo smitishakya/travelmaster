@@ -88,12 +88,13 @@
                             <br>
                             Necessitatibus deleniti nulla, hic voluptatibus eum voluptatum libero suscipit nemo voluptates.</p>
                     </div>
-                    <div class="row-2">
-                        <img class="about-img" src="./img/about-trip-advisor.svg" alt="about-trip-advisor">
-                        <img class="about-img" src="./img/about-choice-fm.svg" alt="about-choice-fm">
-                        <img class="about-img" src="./img/about-pgn.svg" alt="about-pgn">
-                        <img class="about-img" src="./img/about-energy-for-life.svg" alt="about-energy-for-life">
-                        <img class="about-img" src="./img/about-belfius.svg" alt="about-belfius">
+                    <div class="row-2 carousel">
+                                <img class="about-img" src="./img/about-trip-advisor.svg" alt="about-trip-advisor">
+                                <img class="about-img" src="./img/about-choice-fm.svg" alt="about-choice-fm">
+                                <img class="about-img" src="./img/about-pgn.svg" alt="about-pgn">
+                                <img class="about-img" src="./img/about-energy-for-life.svg" alt="about-energy-for-life">
+                                <img class="about-img" src="./img/about-belfius.svg" alt="about-belfius">
+                        </div>
                     </div>
                     
                 </div>
@@ -105,14 +106,13 @@
                 <div class="col-3 latest-trips-row-1">
                     <div class="vertical-line">
                         <h2>Latest Trips</h2>
-                        <h3>Lorem ipsum dolor sit amet, consetetur<br>
-                            sadipscing.</h3>
+                        <h3>Lorem ipsum dolor sit amet,<br> 
+                            conseteturs adipscing.</h3>
                     </div>
                     
-                    <p class="space-para">Lorem ipsum dolor sit amet, consetetur <br>
-                    sadipscing elitr, sed diam nonumy <br>
-                    eirmod tempor invidunt ut labore et <br>
-                    dolore magna aliquyam erat, sed diam <br>
+                    <p class="space-para">Lorem ipsum dolor sit amet, <br>
+                    consetetur sadipscing elitr, sed diam nonumy 
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam <br>
                     voluptua.</p>
                     <button class="btn orange-btn space-btn">Join Now</button>
                 </div>
@@ -492,20 +492,28 @@
         <div class="discover-places">
                 <div class="row">
                     <div class="discover-col-1">
-                        <!-- <div class="dis-col-1">
-                            
-                            <div class="days">
-                                <div class="days-row days-row-1">
-                                    <h4>Hotel & Resort</h4>
-                                </div>
-                                <div class="days-row">
-                                    <p>4 Tour Available</p> 
-                                </div>        
-                            </div> 
-                        </div>  -->
-                        <img class="discover-img" src="./img/hotel-n-resort.svg" alt="hotel-n-resort">
-                        <img class="discover-img" src="./img/mountain-biking.svg" alt="mountain-biking">
-                        <img class="discover-img" src="./img/japanese-martial-arts.svg" alt="japanese-martial-arts">
+                        <div class="discover-slides">
+                            <img class="discover-img" src="./img/hotel-n-resort.svg" alt="hotel-n-resort">
+                            <div class="discover-text">
+                                <h3>Hotel & Resort</h3>
+                                <p>4 Tour Available</p> 
+                            </div>       
+                        </div> 
+                        <div class="discover-slides">
+                            <img class="discover-img" src="./img/mountain-biking.svg" alt="mountain-biking">
+                            <div class="discover-text">
+                                <h3>Mountain Biking</h3>
+                                <p>4 Tour Available</p> 
+                            </div>
+                        </div>
+                        <div class="discover-slides">
+                            <img class="discover-img" src="./img/japanese-martial-arts.svg" alt="japanese-martial-arts">
+                            <div class="discover-text">
+                                <h3>Japanese Martial Arts</h3>
+                                <p>2 Tour Available</p> 
+                            </div>
+                        </div> 
+                       
                     </div>
                     <div class="discover-col-2">
                             <div class="vertical-line">
@@ -515,8 +523,8 @@
                             </div>                        
                             <p class="space-para">Lorem ipsum dolor sit amet, consetetur <br>
                             sadipscing elitr, sed diam nonumy.</p>
-                            <img class="discover-arrow-img" src="./img/no-back-arrow.svg" alt="no-back-arrow">
-                            <img class="discover-arrow-img" src="./img/with-back-arrow.svg" alt="with-back-arrow">
+                            <a onclick="plusSlides(-1)" class="prev"><img class="discover-arrow-img" src="./img/no-back-arrow.svg" alt="no-back-arrow"></a>
+                            <a onclick="plusSlides(1)" class="next"> <img class="discover-arrow-img" src="./img/with-back-arrow.svg" alt="with-back-arrow"></a>    
                     </div>
                 </div>
         </div>
@@ -1050,6 +1058,7 @@
                 </nav>
         </div>     
     </footer>
+   
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="./script.js"></script>  
 </body>

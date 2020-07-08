@@ -416,10 +416,30 @@ h1{
 } 
 
 .discover-col-1{
+    position: relative;
     flex: 40%;
     padding: 10px;
     display: flex;
     flex-direction: column;  
+}
+.discover-slides {
+    margin: 50px 0px;
+}
+.prev, .next{
+    cursor: pointer;
+}
+.discover-img{
+    width: 250px;
+    margin: 0 30px;
+}
+.discover-text{
+    position: absolute;
+    top: 130px;
+    left: 35px;
+    margin: 15px;
+}
+.discover-text p{
+    color: white;
 }
 .discover-arrow-img{
     width: 40px;
@@ -1025,7 +1045,7 @@ p.footer-li {
     
 }
 /* Ipad Pro Size */
-@media screen and (min-width: 1024px){
+@media only screen and (width: 1024px){
     .tour-rows{
         margin: 0px 50px;
     }
@@ -1107,8 +1127,8 @@ p.footer-li {
         justify-content: space-between;
     }
     .about-img{
-        padding: 0px 10px 0px 0px;
-        width: 195px;
+        padding: 10px 20px 0px 20px;
+        width: 194px;
     }
     /* Latest Trips */
 
@@ -1143,6 +1163,9 @@ p.footer-li {
         margin: 0px;
     }
     /* Discover Places by Interest */
+    .discover-col-1,.discover-col-2 {
+        margin: 0px;
+    }
     .discover-places{
         margin: 50px 0px 50px 0px;
     }
@@ -1151,7 +1174,13 @@ p.footer-li {
         flex-wrap: nowrap;
     }
     .discover-img{
-        width: 320px;
+        width: 490px;
+        margin-left: 200px;
+    }
+    .discover-text{
+        top: 250px;
+        left: 220px;
+        margin: 15px;
     }
     
     /* Hear from Our Guests */
