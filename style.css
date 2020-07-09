@@ -55,6 +55,17 @@ p, span{
     font-weight: 500;
     color: white;
 }
+.nav-li a:hover, select:hover{
+   color:  #FF8121;
+}
+#nav-button:hover, #know-more:hover{
+    color: #FF8121;
+    border: 1px solid #FF8121;
+}
+#book-now:hover{
+    color: black;
+}
+
 .nav-list{
     display: none;
 }
@@ -919,7 +930,12 @@ p.footer-li {
         display: flex;
         justify-content: space-between;
         margin: 0px;
-        
+    }
+
+    .heading-section{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;  
     }
     .trans-btn{
         margin: 59px 7px;
@@ -1116,10 +1132,10 @@ p.footer-li {
         margin: 0 100px;
         border: none;
     }
-    .form-div{
-        padding: 0px;
-        margin: 0px;
+    .form-div label{
+        font-size: 16px;
     }
+
     .search-btn{
         padding: 10px 35px;
     }
@@ -1153,6 +1169,9 @@ p.footer-li {
     }
     
     /* Popular Destination */
+    .popular-title{
+        margin-right: 90px;
+    }
     .col-sm-pop {
         padding: 0;
         margin: 10px;
@@ -1277,9 +1296,14 @@ p.footer-li {
     .pop-destinations, .portfolio{
         margin: 50px 100px;
     }
+    .heading-section{
+        margin-right: 30px;
+    }
     .portfolio-img{
-        width: 400px;
-        
+        width: 394px;
+    }
+    .col-portfolio{
+        margin:0px 25px;
     }
     .portfolio-nav a{
         padding-right: 30px;
