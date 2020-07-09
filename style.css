@@ -103,7 +103,7 @@ p, span{
 .heading-content{
     text-align: center;
     color: white;
-    padding: 40px;
+    padding: 57px;
 }
 h1{
     font-size: 30px; 
@@ -215,7 +215,7 @@ h1{
     padding: 0px 0px 10px 0px;
 }
 .about-fea-img{
-    width: 200px;
+    width: 100%;
 }
 
 /* Latest Trips */
@@ -226,9 +226,7 @@ h1{
     flex: 20%;
     padding: 10px;
 }
-.latest-container{
-    width: 197px;
-}
+
 .latest-trips-row-1, .latest-trips-row{
     flex: 50%;
 }
@@ -302,7 +300,7 @@ h1{
 }
 
 .col-sm-img {
-    width: 197px;
+    width: 100%;
 }
 
 /* Service Section  */
@@ -329,7 +327,7 @@ h1{
     font-size: 13px;
 }
 .pop-sm-img{
-    width: 218px;
+    width: 100%;
 }
 .pop-rating{
     background-color: #F6F6F6;
@@ -359,7 +357,6 @@ h1{
     border: 1px solid #E8E8E8;
     line-height: 1.5em;
     padding-bottom: 10px;
-    width: 218px;
 }
 /* An Amazing Journey */
 .amazing-journey {
@@ -375,8 +372,8 @@ h1{
     display: flex;
     flex-wrap: wrap;
 }
-.col-sm-tour, img.tour-img {
-    width: 218px;
+img.tour-img {
+    width: 100%;
 }
 
 .tour-h4{
@@ -429,8 +426,7 @@ h1{
     cursor: pointer;
 }
 .discover-img{
-    width: 250px;
-    margin: 0 30px;
+    width: 100%;
 }
 .discover-text{
     position: absolute;
@@ -471,7 +467,7 @@ h1{
     color: black;
 }
 .portfolio-img{
-    width: 219px;
+    width: 100%;
     
 }
 
@@ -496,7 +492,7 @@ h1{
     padding: 0px 10px;
 }
 .guests-col-1 img {
-    width: 60px;
+    width: 100%;
 }
 .guest-dots{
     display: flex;
@@ -612,7 +608,7 @@ h1{
     margin-bottom: 1.5em;
 } 
 .blog-row-1-img{
-    width: 219px;
+    width: 100%;
     
 }
 
@@ -620,7 +616,6 @@ h1{
     position: relative;
     margin-right:10px;
     float: left;
-    width: 48%;
 }
 .blog-con-info h3{
     font-size: 15px;
@@ -638,11 +633,10 @@ h1{
 }
 .blog-con-info{
     position: absolute;
-    top: 67px;
+    top: 48px;
     left: 2px;
     margin: 5px;
     right: 0px;
-    width: 204px;
 }
 .blog-img-data{  
     display: flex;
@@ -666,7 +660,7 @@ h1{
 }
 
 .blog-col-img {
-    width: 218px;
+    width: 100%;
 }
 .blog-calender, .blog-comment, .blog-likes{
     display: flex;
@@ -914,6 +908,16 @@ p.footer-li {
         margin: 50px 100px;
     }
     /* Popular Destinations */
+    .pop-sm-img{
+        width: 280px;
+    }
+    .col-sm-pop{
+        width: 280px;
+    }
+    .pop-rating {
+        top: 84px;
+        right: 19px;
+    }
 
     .pop-heading {
         display: flex;
@@ -928,7 +932,7 @@ p.footer-li {
 
     
     .pop-rows{
-        margin: 0 100px;
+        margin: 0 27px;
         
         
     }
@@ -961,7 +965,6 @@ p.footer-li {
     .unique-row{
         width: 44%;
     }
-    
     /* Tour Packages  */
     .tour-rows {
         margin: 0px 100px;
@@ -985,6 +988,9 @@ p.footer-li {
         flex-direction: row;
         flex-wrap: wrap;
     }
+    .discover-text {
+        top: 200px;
+    }
     .discover-col-1, .discover-col-2 {
         margin: 0 170px;
     }
@@ -999,18 +1005,28 @@ p.footer-li {
         margin: 0 100px;
     }
     /* Our latest Blogs */
-    .col-8{
-     margin: 0px 100px;
-    }
+
     .blog-col-1{
         width: 370px;
     }
     .blog-row-1-img{
-        width: 460px;
+        width: 100%;
     }
-    .blog-img{
-        width: 20%;
-        margin:10px 70px;
+    .blog-col-img {
+        width: 324px;
+    }
+    .blog-con-info {
+        top: 109px;
+    }
+    .blog-image {
+        width: 25px;
+    }
+    .blog-para {
+        font-size: 22px;
+        margin-left: 10px;
+    }
+    .blog-insta-p {
+        font-size: 22px;
     }
     /* Team */
     .our-team{
@@ -1026,6 +1042,13 @@ p.footer-li {
     /* European cities */
     .book-now-img {
         width: 451px;
+    }
+    /* Portfolio */
+    .portfolio-img {
+        width: 287px;
+    }
+    .portfolio-nav {
+        margin-left: 26px;
     }
 
     /* Footer Section */
@@ -1058,12 +1081,10 @@ p.footer-li {
     .discover-col-1,.discover-col-2 {
         margin: 0 280px;
     }
-    .col-8{
-        margin: 0px 232px;
+    .col-7 {
+        margin: 0 100px;
     }
-    .col-7{
-        margin: 0px 163px;
-    }
+    
 }
 /* Only Desktop Size */
 @media only screen and (min-width: 1025px){
