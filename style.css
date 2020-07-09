@@ -247,9 +247,9 @@ h1{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 56px;
-    left: 15px;
-    right: 15px;
+    top: 56%;
+    left: 15%;
+    right: 15%;
     padding: 10px 10px 0px 10px;
 
 }
@@ -332,7 +332,7 @@ h1{
 .pop-rating{
     background-color: #F6F6F6;
     position: absolute;
-    top: 70px;
+    top: 60%;
     right: 10px;
     padding: 3px;
 }
@@ -391,7 +391,7 @@ img.tour-img {
 .tour-rating{
     background-color: #F6F6F6;
     position: absolute;
-    top: 80px;
+    top: 60%;
     right: 10px;
     padding: 3px;
 }
@@ -633,7 +633,7 @@ img.tour-img {
 }
 .blog-con-info{
     position: absolute;
-    top: 48px;
+    top: 36%;
     left: 2px;
     margin: 5px;
     right: 0px;
@@ -914,10 +914,6 @@ p.footer-li {
     .col-sm-pop{
         width: 280px;
     }
-    .pop-rating {
-        top: 84px;
-        right: 19px;
-    }
 
     .pop-heading {
         display: flex;
@@ -976,12 +972,9 @@ p.footer-li {
     .tour-h4{
         font-size: 30px;
     }
-    .tour-rating {
-        
-        top: 170px;
-        left: 280px;
-        right: 25px;
-        padding: 8px;
+
+    .tour-rating{
+        top: 74%;
     }
     /* Discover Places */
     .discover-col-1{
@@ -1019,7 +1012,8 @@ p.footer-li {
         top: 109px;
     }
     .blog-image {
-        width: 25px;
+        width: 18px;
+        margin-right: 6px;
     }
     .blog-para {
         font-size: 22px;
@@ -1170,6 +1164,9 @@ p.footer-li {
     .pop-sm-img {
         width: 390px;
     }
+    .pop-rating {
+        top: 73%;
+    }
 
     /* Amazing Journey */
 
@@ -1220,9 +1217,6 @@ p.footer-li {
     /* European cities with most beautiful architecture. */
     .book-now{
         padding: 0px 100px;
-    }
-    .book-now-img{
-        width: 600px;
     }
     .book-now-row-1{
         position: relative;
@@ -1278,12 +1272,7 @@ p.footer-li {
     .blog-insta-p{
         font-size: 14px;
     }
-    .pop-rating {
-        top: 115px;
-        left: 296px;
-        right: 8px;
-        padding: 8px;
-    }
+
     /* Portfolio */
     .pop-destinations, .portfolio{
         margin: 50px 100px;
