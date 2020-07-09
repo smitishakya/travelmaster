@@ -364,7 +364,7 @@ h1{
     background-color: #F6F6F6;
 }
 .mountain-img{
-    height: 100px;
+    width: 100%;
 }
 
 /* Tour Packages  */
@@ -576,7 +576,7 @@ img.tour-img {
     padding: 30px 50px;
 }
 .book-now-img{
-    width: 200px;
+    width: 100%;
 }
 .book-now-row-2{
     line-height: 2.4em;
@@ -1039,10 +1039,7 @@ p.footer-li {
     .team{
         margin: 10px;
     }
-    /* European cities */
-    .book-now-img {
-        width: 451px;
-    }
+
     /* Portfolio */
     .portfolio-img {
         width: 287px;
