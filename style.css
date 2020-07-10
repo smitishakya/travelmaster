@@ -233,6 +233,9 @@ h1{
 .latest-trips{
     margin: 30px 50px;
 }
+.latest-container:hover{
+    border: 1px solid black;
+}
 .col-3{
     flex: 20%;
     padding: 10px;
@@ -328,6 +331,9 @@ h1{
 /* Popular Destination   */
 .pop-heading{
     margin-bottom: 10px;
+}
+.col-sm-pop:hover{
+    border: 1px solid black;
 }
 
 .trans-btn{
