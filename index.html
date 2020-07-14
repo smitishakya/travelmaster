@@ -18,12 +18,12 @@
             </button>
             <ul class="nav-list" id="nav-ul">  
                 <li class="nav-li"><a href="#">Home</a></li>
-                <li class="nav-li"><a href="#">About</a></li>
+                <li class="nav-li"><a href="#about">About</a></li>
                 <select class="nav-li hero-select" name="destination" id="destionation"><option value="des">Destinations</option></select>
                 <select class="nav-li hero-select" name="trip types" id="trip-types"><option value="trip">Trip Types</option></select>
-                <li class="nav-li"><a href="#">Gallery</a></li>
-                <li class="nav-li"><a href="#">Blog</a></li>
-                <li class="nav-li"><a href="#">Contact</a></li>
+                <li class="nav-li"><a href="#gallery">Gallery</a></li>
+                <li class="nav-li"><a href="#blog">Blog</a></li>
+                <li class="nav-li"><a href="#contact">Contact</a></li>
             </ul>
             <ul class="nav-contact-info" id="nav-contact">
                 <li class="nav-li"><a href="#">info@wptravel.com &nbsp; | </a></li>
@@ -70,7 +70,7 @@
     </div>
     <main>
         <!-- About Travel Master -->
-        <div class="about-travel-master">
+        <div class="about-travel-master" id="about">
             <div class="row">
                 <div class="col-1">
                     <img class="about-fea-img" src="./img/about-travel-master.svg" alt="about-travel-master">
@@ -528,7 +528,7 @@
                 </div>
         </div>
         <!-- Portfolio -->
-        <div class="portfolio">
+        <div class="portfolio" id="gallery">
                 <div class="heading-section">
                     <div class="pop-title">
                         <div class="vertical-line">
@@ -673,14 +673,39 @@
                 </div>
                 <div class="col-7">
                     <div class="col-uni-img">
-                        <img class="unique-img" src="img/unique-exp-1.svg" alt="unique-exp-1">
+                        <img class="unique-img" onclick="openModal();currentImageSlide(1)"src="img/unique-exp-1.svg" alt="unique-exp-1" id="myImg" >
                     </div>
                     <div class="col-uni-img">
-                        <img class="unique-img" src="img/unique-exp-2.svg" alt="unique-exp-2">
+                        <img class="unique-img" onclick="openModal();currentImageSlide(2)" src="img/unique-exp-2.svg" alt="unique-exp-2">
                     </div>
-                    <div class="col-uni-img">  <img class="unique-img" src="img/unique-exp-3.svg" alt="unique-exp-3"></div>
-                    <div class="col-uni-img"><img class="unique-img" src="img/unique-exp-4.svg" alt="unique-exp-4"> </div>  
+                    <div class="col-uni-img"><img class="unique-img" onclick="openModal();currentImageSlide(3)" src="img/unique-exp-3.svg" alt="unique-exp-3"></div>
+                    <div class="col-uni-img"><img class="unique-img" onclick="openModal();currentImageSlide(4)" src="img/unique-exp-4.svg" alt="unique-exp-4"> </div>  
 
+                </div>
+                <!-- Lightbox-->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                  
+                      <div class="uniqueexpSlides">
+                        <img src="img/unique-exp-1.svg" style="width:100%">
+                      </div>
+                  
+                      <div class="uniqueexpSlides">
+                        <img src="img/unique-exp-2.svg" style="width:100%">
+                      </div>
+                  
+                      <div class="uniqueexpSlides">
+                        <img src="img/unique-exp-3.svg" style="width:100%">
+                      </div>
+                      
+                      <div class="uniqueexpSlides">
+                        <img src="img/unique-exp-4.svg" style="width:100%">
+                      </div>
+                      
+                      <a class="uni-prev" onclick="plusImageSlides(-1)">&#10094;</a>
+                      <a class="uni-next" onclick="plusImageSlides(1)">&#10095;</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -707,7 +732,7 @@
                 </div>
         </div>
         <!-- Our Latest Blogs -->
-        <div class="latest-blogs">
+        <div class="latest-blogs" id="blog">
             <div class="heading-section">
                         <div class="pop-title">
                             <div class="vertical-line">
@@ -913,7 +938,7 @@
                 </div>
         </div>
         <!-- Contact Section -->
-        <div class="contact-sec">
+        <div class="contact-sec" id="contact">
                 <div class="row contact-row">
                     <div class="col-contact-1">
                         <h2>Get in Touch</h2>

@@ -31,3 +31,35 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
 }
+
+// Unique Experience Section Lighbox Effect 
+
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideImageIndex = 1;
+showImagesSlides(slideImageIndex);
+
+function plusImageSlides(n) {
+  showImagesSlides(slideImageIndex += n);
+}
+
+function currentImageSlide(n) {
+  showImagesSlides(slideImageIndex = n);
+}
+
+function showImagesSlides(n) {
+  var i;
+  var slidesImages = document.getElementsByClassName("uniqueexpSlides");
+  if (n > slidesImages.length) {slideImageIndex = 1}
+  if (n < 1) {slideImageIndex = slidesImages.length}
+  for (i = 0; i < slidesImages.length; i++) {
+      slidesImages[i].style.display = "none";
+  }
+  slidesImages[slideImageIndex-1].style.display = "block";
+}
