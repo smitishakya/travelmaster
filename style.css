@@ -608,7 +608,7 @@ img.tour-img {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 50%;
     left: 0;
     top: 0;
     width: 100%;
@@ -1168,6 +1168,10 @@ p.footer-li {
     .portfolio-nav {
         margin-left: 26px;
     }
+    /* Lightbox */
+    .modal {
+        padding-top: 30%;
+    }
 
     /* Footer Section */
     .footer-bottom {
@@ -1356,6 +1360,9 @@ p.footer-li {
     .modal-content {
     width: 50%;
     }
+    .modal {
+        padding-top: 100px;
+      }
     /* European cities with most beautiful architecture. */
     .book-now{
         padding: 0px 100px;

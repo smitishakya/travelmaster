@@ -551,15 +551,45 @@
                 </ul>
                 <div class="pop-rows">
                     <div class="col-portfolio">    
-                        <img class="portfolio-img" src="./img/portfolio-1.svg" alt="portfolio-1">
-                        <img class="portfolio-img" src="./img/portfolio-2.svg" alt="portfolio-2">    
-                        <img class="portfolio-img" src="./img/portfolio-3.svg" alt="portfolio-3">   
-                        <img class="portfolio-img" src="./img/portfolio-4.svg" alt="portfolio-4">
-                        <img class="portfolio-img" src="./img/portfolio-5.svg" alt="portfolio-5">    
-                        <img class="portfolio-img" src="./img/portfolio-6.svg" alt="portfolio-6">     
+                        <img class="portfolio-img" src="./img/portfolio-1.svg" alt="portfolio-1" onclick="openGallery();currentGallerySlides(1)">
+                        <img class="portfolio-img" src="./img/portfolio-2.svg" alt="portfolio-2" onclick="openGallery();currentGallerySlides(2)">    
+                        <img class="portfolio-img" src="./img/portfolio-3.svg" alt="portfolio-2" onclick="openGallery();currentGallerySlides(3)">    
+                        <img class="portfolio-img" src="./img/portfolio-4.svg" alt="portfolio-2" onclick="openGallery();currentGallerySlides(4)">    
+                        <img class="portfolio-img" src="./img/portfolio-5.svg" alt="portfolio-3" onclick="openGallery();currentGallerySlides(5)">   
+                        <img class="portfolio-img" src="./img/portfolio-6.svg" alt="portfolio-4" onclick="openGallery();currentGallerySlides(6)">   
                     </div>
-
                 </div>
+                <!-- Lightbox-->
+                <div id="myGallery" class="modal">
+                    <span class="close cursor" onclick="closeGallery()">&times;</span>
+                    <div class="modal-content">
+                  
+                      <div class="gallerySlides">
+                        <img src="img/portfolio-1.svg" style="width:100%">
+                      </div>
+                  
+                      <div class="gallerySlides">
+                        <img src="img/portfolio-2.svg" style="width:100%">
+                      </div>
+                  
+                      <div class="gallerySlides">
+                        <img src="img/portfolio-3.svg" style="width:100%">
+                      </div>
+                      
+                      <div class="gallerySlides">
+                        <img src="img/portfolio-4.svg" style="width:100%">
+                      </div>
+                      <div class="gallerySlides">
+                        <img src="img/portfolio-5.svg" style="width:100%">
+                      </div>
+                      <div class="gallerySlides">
+                        <img src="img/portfolio-6.svg" style="width:100%">
+                      </div>
+                      
+                      <a class="uni-prev" onclick="plusGallerySlides(-1)">&#10094;</a>
+                      <a class="uni-next" onclick="plusGallerySlides(1)">&#10095;</a>
+                    </div>
+               </div>
         </div>
         <!-- Hear from Our Guests -->
         <div class="guests-section">
@@ -673,13 +703,13 @@
                 </div>
                 <div class="col-7">
                     <div class="col-uni-img">
-                        <img class="unique-img" onclick="openModal();currentImageSlide(1)"src="img/unique-exp-1.svg" alt="unique-exp-1" id="myImg" >
+                        <img class="unique-img" onclick="openModal();currentImageSlides(1)"src="img/unique-exp-1.svg" alt="unique-exp-1" id="myImg" >
                     </div>
                     <div class="col-uni-img">
-                        <img class="unique-img" onclick="openModal();currentImageSlide(2)" src="img/unique-exp-2.svg" alt="unique-exp-2">
+                        <img class="unique-img" onclick="openModal();currentImageSlides(2)" src="img/unique-exp-2.svg" alt="unique-exp-2">
                     </div>
-                    <div class="col-uni-img"><img class="unique-img" onclick="openModal();currentImageSlide(3)" src="img/unique-exp-3.svg" alt="unique-exp-3"></div>
-                    <div class="col-uni-img"><img class="unique-img" onclick="openModal();currentImageSlide(4)" src="img/unique-exp-4.svg" alt="unique-exp-4"> </div>  
+                    <div class="col-uni-img"><img class="unique-img" onclick="openModal();currentImageSlides(3)" src="img/unique-exp-3.svg" alt="unique-exp-3"></div>
+                    <div class="col-uni-img"><img class="unique-img" onclick="openModal();currentImageSlides(4)" src="img/unique-exp-4.svg" alt="unique-exp-4"> </div>  
 
                 </div>
                 <!-- Lightbox-->
