@@ -853,6 +853,9 @@ img.tour-img {
 .col-contact-2{
     line-height: 3em;
 }
+.col-contact-1 a{
+    color:  #959595;
+}
 
 .submit-input{
     border: 1px solid white;
